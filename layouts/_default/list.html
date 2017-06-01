@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html class="sl-root decks fullscreen mz-applicationcache mz-history mz-localstorage mz-svg mz-opacity mz-rgba mz-backgroundsize mz-cssanimations mz-csstransforms mz-csstransforms3d mz-csstransitions mz-flexbox mz-flexboxlegacy mz-fullscreen loaded ua-linux ua-chrome has-visible-scrollbars reveal-is-ready fonts-are-ready">
+    <head>{{ partial "head.html" . }}</head>
+    <body class="reveal-viewport theme-font-league theme-color-grey-blue">
+        <div id="fakeLoader"></div>
+        {{ partial "script.html" . }}
+        <div class="reveal">
+            <div class="slides">
+                {{ partial "series.html" . }}
+            </div>
+            <div class="Message">
+                <div class="flag_image">
+                    <i class="fa-comment"></i>
+                </div>
+                <div class="ns-box-inner">
+                    <p>点击下一页</p>
+                </div>
+                <div class="Bubble"><i class="comment"></i></div>
+                <span class="ns-close"></span>
+            </div>
+            <script src="{{ .Site.BaseURL }}js/message.js"></script>
+        </div>
+        <script type="text/javascript">
+            $("#fakeLoader").fakeLoader({
+                timeToHide:800,
+                zIndex:999,
+                spinner:"spinner2",
+                bgColor:"#2e2e2e"
+            });
+        </script>
+    </body>
+</html>

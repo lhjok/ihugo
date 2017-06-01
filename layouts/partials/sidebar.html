@@ -1,0 +1,46 @@
+<div class="Sidebar">
+    <div class="logo">
+        <a href="{{ $.Site.BaseURL }}" title="首页"></a>
+    </div>
+    <div class="brand-title"><a href="{{ $.Site.BaseURL }}" title="首页">{{ .Site.Params.SiteLogo }}</a></div>
+    <div class="brand-tagline">{{ .Site.Params.description }}</div>
+    <ul class="nav-list">
+    {{ if isset .Site.Taxonomies "series" }}
+        {{ if not (eq (len .Site.Taxonomies.series) 0) }}
+            {{ range $name, $items := .Site.Taxonomies.series }}
+            <li class="nav-item">
+                <span class="separator">//</span>
+                <a href="{{ $.Site.BaseURL }}series/{{ $name | urlize | lower }}">{{ $name }}({{ len $items }})</a>
+            </li>
+            {{ end }}
+        {{ end }}
+    {{ end }}
+    </ul>
+    <div class="foo">
+        <div class="copy">{{ .Site.Params.copyright }}</div>
+        <div class="cnzz">
+            <a href="http://www.cnzz.com/stat/website.php?web_id=1257008746" target="_blank"></a>
+        </div>
+    </div>
+    <div class="share">
+        <div class="share-to-weibo">{{ partial "share.html" . }}</div>
+        <div class="text-share">点击分享到 :</div>
+    </div>
+    <div class="qrcode">
+        <div class="qrcode01"><img src="{{ $.Site.BaseURL }}img/code.jpg"><div class="qrcodewx">关注我们微信公众号</div></div>
+        <div class="qrcode02"><img src="{{ $.Site.BaseURL }}img/code.jpg"><div class="qrcodewx">不会购买请加微信群</div></div>
+    </div>
+    <div class="siteinfo">
+        <div class="flaginfo">
+            <div class="icon">
+                <i class="commentinfo"></i>
+                <i class="commentinfo1"></i>
+            </div>
+        </div>
+        <div class="boxinner">
+            <p>{{ .Site.Params.notice }}</p>
+        </div>
+        <div class="Bubbles"><i class="comm"></i></div>
+        <span class="closes"></span>
+    </div>
+</div>
