@@ -5,8 +5,8 @@
 	color: #13daec;
 	width: 130px;
 	height: 40px;
-	right: 18px;
-	bottom: 130px;
+	right: 8px;
+	bottom: 92px;
 	font-size: 13px;
 	overflow: hidden;
 	-webkit-transition: opacity .3s ease;
@@ -95,7 +95,7 @@
 .reveal .Message .Bubble i.comment:before{
 	position:absolute;
 	top:0px;
-	left:73px;
+	left:83px;
 	content:'';
 	height:0;
 	width:0;

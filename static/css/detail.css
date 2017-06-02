@@ -73,6 +73,10 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     font-size: 100%;
     vertical-align: baseline;
 }
+.reveal img, .reveal video, .reveal iframe{
+    max-width: 100%;
+    max-height: 100%;
+}
 .reveal:after {
     content: '';
     font-style: italic;
@@ -86,6 +90,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     backface-visibility: hidden;
 }
 .reveal.linear section {
+    font-family: "Microsoft YaHei",Verdana,Tahoma,Monaco,"DejaVu Sans Mono",Arial;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     padding: 0;
@@ -251,7 +256,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     width: 123px;
     height: 21px;
     font-size: 12px;
-    line-height: 17px;
+    line-height: 18px;
     text-align: center;
 }
 .reveal .slides .Sidebar .siteinfo{
@@ -299,6 +304,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 	height: 34px;
     line-height: 1.4;
 	overflow: hidden;
+    margin: 0;
 }
 .reveal .slides .Sidebar .siteinfo .icon{
     position:relative;
@@ -740,6 +746,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     width: 590px;
     height: 43px;
     margin-top: 12px;
+    margin-bottom: 3px;
 }
 .reveal .slides .content .titles .post_title {
     position: relative;
@@ -1014,8 +1021,8 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     width: 16px;
     height: 16px;
     display: block;
-    margin-top: 5px;
-    margin-right: 4px;
+    margin-top: 3px;
+    margin-right: 5px;
 }
 .reveal .slides .content .post_mode .bottom-info .tmall{
     float: left;
@@ -1024,7 +1031,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     width: 16px;
     height: 16px;
     display: block;
-    margin-top: 2px;
+    margin-top: 1px;
     margin-right: 6px;
 }
 .reveal .slides .content .post_mode .pro_title .taobao{
@@ -1044,7 +1051,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     width: 16px;
     height: 16px;
     display: block;
-    margin-top: 2px;
+    margin-top: 1px;
     margin-right: 6px;
 }
 .reveal .slides .content .post_mode .pro_detail{
@@ -1076,17 +1083,18 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     background-color: #444;
 }
 .reveal .slides .content .post_mode .pro_detail .pro_intro .pro_title{
-    font-size: 15px;
+    font-size: 14px;
     padding:8px 10px 6px 10px;
     max-height:68px;
-    line-height: 1.6;
+    line-height: 1.5;
     text-indent: 0;
+    margin-top: 5px;
     margin-bottom: 0;
     overflow:hidden;
 }
 .reveal .slides .content .post_mode .pro_detail .pro_intro .pro_title a{
     color: #ccc;
-    font-size:15px;
+    font-size:14px;
 }
 .reveal .slides .content .post_mode .pro_detail .pro_intro .pro_title a:hover{
     color: #eee;
@@ -1140,8 +1148,8 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     -moz-border-radius: 3px;
     background-color:#E54028;
     margin-left:10px;
-    margin-top:8px;
-    padding: 5px 6px 6px 12px;
+    margin-top:10px;
+    padding: 5px 6px 6px 10px;
 }
 .reveal .slides .content .post_mode .pro_detail .pro_intro .pro_nowPri span{
     float: left;
@@ -1165,7 +1173,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 .reveal .slides .content .post_mode .pro_detail .pro_intro .buy{
     font-size:14px;
     margin-left:10px;
-    margin-top:14px;
+    margin-top:15px;
 }
 .reveal .slides .content .post_mode .pro_detail .pro_intro .buy .sp1{
     color:#ccc
@@ -1341,11 +1349,23 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     padding-left: 5px;
     margin-top: 2px;
 }
-.reveal .slides .content .pro_detail2 .tab01 .tabtitle .price-area .price,
+.reveal .slides .content .pro_detail2 .tab01 .tabtitle .price-area .price{
+    position: relative;
+    float: left;
+    height: 27px;
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+}
 .reveal .slides .content .post_mode .zk-item .info .price-area .price {
     position: relative;
     float: left;
-    margin-top: 6px;
+    height: 27px;
+    line-height: 28px;
+    font-size: 19px;
+    font-weight: 700;
+    margin: 0;
 }
 .reveal .slides .content .pro_detail2 .tab01 .tabtitle .price-area em.decimal,
 .reveal .slides .content .pro_detail2 .tab01 .tabtitle .price-area em.number-font,
@@ -1353,15 +1373,16 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 .reveal .slides .content .post_mode .zk-item .info .price-area em.number-font {
     position: relative;
     float: left;
+    height: 27px;
+    line-height: 27px;
     font-weight: 700;
     font-family: Arial;
     font-style: normal;
-    margin-top: 6px;
+    margin: 0;
 }
 .reveal .slides .content .pro_detail2 .tab01 .tabtitle .price-area em.decimal,
 .reveal .slides .content .post_mode .zk-item .info .price-area em.decimal{
-    margin-top: 8px;
-    margin-right: 2px;
+    margin-right: 3px;
 }
 .reveal .slides .content .pro_detail2 .tab01 .tabtitle .price-area i,
 .reveal .slides .content .post_mode .zk-item .info .price-area i {
@@ -1373,13 +1394,25 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     background-size: 47px 19px;
     margin-top: 4px;
 }
-.reveal .slides .content .pro_detail2 .tab01 .tabtitle .price-area em.number-font,
+.reveal .slides .content .pro_detail2 .tab01 .tabtitle .price-area em.number-font{
+    height: 27px;
+    line-height: 32px;
+    font-size: 23px;
+}
 .reveal .slides .content .post_mode .zk-item .info .price-area em.number-font {
+    height: 27px;
+    line-height: 30px;
     font-size: 28px;
     padding-left: 2px
 }
-.reveal .slides .content .pro_detail2 .tab01 .tabtitle .price-area em.decimal,
+.reveal .slides .content .pro_detail2 .tab01 .tabtitle .price-area em.decimal{
+    height: 27px;
+    line-height: 32px;
+    font-size: 20px;
+}
 .reveal .slides .content .post_mode .zk-item .info .price-area em.decimal {
+    height: 27px;
+    line-height: 33px;
     font-size: 20px
 }
 .reveal .slides .content .post_mode .zk-item .info .platform-area {
@@ -1389,6 +1422,13 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     margin-right: 5px;
     font-size: 12px;
     line-height: 20px;
+}
+.reveal .slides .content .post_mode .zk-item .info .platform-area span{
+    display: block;
+    float: right;
+    height: 25px;
+    font-size: 12px;
+    line-height: 27px;
 }
 @media screen and (min-width: 641px) {
     .reveal .slides .content .post_mode .zk-item:hover .img-area .bottom-info {
@@ -1400,7 +1440,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 }
 .reveal .slides .content .post_mode .zk-item .info .platform-area img {
     position: relative;
-    top: 5px;
+    top: 3px;
     display: inline-block;
     width: 20px;
     height: 20px;
@@ -1503,18 +1543,14 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     margin-top: 5px;
     padding-left: 6px;
 }
-.reveal .slides .content .pro_detail2 .tab01 .tabtitle .price-area em.number-font{
-    font-size: 25px;
-    margin-top: 7px;
-}
 .reveal .slides .content .pro_detail2 .tab01 .tabtitle .yuanjia{
     display: block;
     float: left;
     width: 50px;
     height:35px;
-    margin-top: 2px;
+    margin-top: 1px;
     font-size: 12px;
-    line-height: 1.3;
+    line-height: 1.4;
 }
 .reveal .slides .content .pro_detail2 .tab01 a.tabsimg .bottom-info{
     position: absolute;
@@ -1531,15 +1567,28 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 }
 .reveal .slides .content .pro_detail2 .tab01 a.tabsimg .bottom-info .title-area {
     position: relative;
+    float: left;
     display: block;
     width: 189px;
     height: 28px;
-    color: #ccc;
+    line-height: 28px;
     font-size: 12px;
     padding: 5px 5px 0;
+    overflow: hidden;
+}
+.reveal .slides .content .pro_detail2 .tab01 a.tabsimg .bottom-info .title-area span{
+    position: relative;
+    float: left;
+    display: block;
+    height: 16px;
+    line-height: 16px;
+    color: #ccc;
+    font-size: 12px;
 }
 .reveal .slides .content .pro_detail2 .tab01 a.tabsimg .bottom-info .title-area .post-free {
-    display: inline-block;
+    position: relative;
+    float: left;
+    display: block;
     height: 16px;
     padding: 0 2px;
     font-size: 12px;
@@ -1548,6 +1597,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     color: #fff;
     text-align: center;
     background-color: #E54028;
+    margin-top: 1px;
     margin-right: 5px;
     border-radius: 1px;
 }
