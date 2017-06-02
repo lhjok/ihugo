@@ -13491,8 +13491,8 @@ SL.config = {
         icon: "file-xml",
         hidden: !0
     }],
-    DEFAULT_DECK_THUMBNAIL: "https://s3.amazonaws.com/static.slid.es/images/default-deck-thumbnail.png",
-    DEFAULT_USER_THUMBNAIL: "https://s3.amazonaws.com/static.slid.es/images/default-profile-picture.png",
+    DEFAULT_DECK_THUMBNAIL: "../../img/default-deck.png",
+    DEFAULT_USER_THUMBNAIL: "../../img/default-profile.png",
     DECK_THUMBNAIL_TEMPLATE: ['<li class="deck-thumbnail">', '<a class="deck-link" href="{{DECK_URL}}"></a>', '<div class="deck-image" style="background-image: url({{DECK_THUMB_URL}})"></div>', '<footer class="deck-details">', '<div class="top">', '<div class="title">{{DECK_TITLE}}</div>', "</div>", '<div class="bottom">', '<a class="author" href="{{USER_URL}}">', '<span class="picture" style="background-image: url({{USER_THUMB_URL}})"></span>', '<span class="name">{{USER_NAME}}</span>', "</a>", '<div class="stats">', '<div>{{DECK_VIEWS}}<span class="icon i-eye"></span></div>', "</div>", "</div>", "</footer>", "</li>"].join(""),
     AJAX_SEARCH: "/api/v1/search.json",
     AJAX_SEARCH_ORGANIZATION: "/api/v1/team/search.json",
@@ -13762,14 +13762,14 @@ SL.config = {
     STREAM_ENGINE_LIVE_NAMESPACE: "live",
     STREAM_ENGINE_EDITOR_NAMESPACE: "editor",
     APP_HOST: "iinrs.com",
-    S3_HOST: "../js/media.es",
+    S3_HOST: "../../js/media.es",
     GOOGLE_FONTS_LIST: "https://www.googleapis.com/webfonts/v1/webfonts?key=AIzaSyAD1SV55vtPn4d37DWGvPg8iUKhMj2Epzo",
     ASSET_URLS: {
-        "offline-v2.css": "../css/offline-v2.css",
-        "homepage-background.jpg": "../img/homepage-background.jpg",
-        "reveal-plugins/markdown/marked.js": "../js/marked.js",
-        "reveal-plugins/markdown/markdown.js": "../js/markdown.js",
-        "reveal-plugins/highlight/highlight.js": "../js/highlight.js"
+        "offline-v2.css": "../../css/offline-v2.css",
+        "homepage-background.jpg": "../../img/homepage-background.jpg",
+        "reveal-plugins/markdown/marked.js": "../../js/marked.js",
+        "reveal-plugins/markdown/markdown.js": "../../js/markdown.js",
+        "reveal-plugins/highlight/highlight.js": "../../js/highlight.js"
     }
 },
 SL.config.V1 = {
@@ -13904,7 +13904,7 @@ SL.draganddrop = {
 },
 SL.fonts = {
     INIT_TIMEOUT: 5e3,
-    FONTS_URL: SLConfig.fonts_url || "../fonts/",
+    FONTS_URL: SLConfig.fonts_url || "../../fonts/",
     FAMILIES: {
         montserrat: {
             id: "montserrat",
@@ -24585,8 +24585,8 @@ SL("components").ThemeOptions = Class.extend({
           , e = t.find("ul");
         if (this.config.supportsCustomFonts) {
             var i = "You can use custom fonts from Typekit, Google or your own host. Click to learn more."
-              , n = "http://help.iinrs.com/knowledgebase/articles/1077976";
-            this.config.themeEditor && (n = "http://help.iinrs.com/knowledgebase/articles/590055-theme-editor-custom-font"),
+              , n = "http://help.iinrs.com/";
+            this.config.themeEditor && (n = "http://help.iinrs.com/"),
             t.find(".section-heading").append('<a href="' + n + '" target="_blank" class="info-link" data-tooltip="' + i + '" data-tooltip-maxwidth="240">Custom fonts</a>')
         }
         this.config.fonts.forEach(function(t) {
@@ -25629,9 +25629,9 @@ SL("views.decks").LiveServer = SL.views.Base.extend({
             speakerViewURL: SL.current_deck.getURL({
                 view: "speaker"
             }),
-            liveViewHelpURL: "http://help.iinrs.com/knowledgebase/articles/333924",
-            speakerViewHelpURL: "http://help.iinrs.com/knowledgebase/articles/333923",
-            remoteControlHelpURL: "http://help.iinrs.com/knowledgebase/articles/333925-remote-control"
+            liveViewHelpURL: "http://help.iinrs.com/",
+            speakerViewHelpURL: "http://help.iinrs.com/",
+            remoteControlHelpURL: "http://help.iinrs.com/"
         },
         SL.util.setupReveal({
             controlsTutorial: !1,
@@ -28976,7 +28976,7 @@ SL("views.users").Show = SL.views.Base.extend({
         if (Modernizr.localstorage && SL.current_user.isEnterpriseManager() && SL.current_team && SL.current_team.get("beta_new_editor") === !1) {
             var t = "slides-team-has-seen-new-editor-announcement";
             if (!localStorage.getItem(t)) {
-                var e = $(['<section class="announcement">', "<h3>New Editor</h3>", '<p>We have released a new and greatly improved presentation editor. Have a look at the <a href="http://iinrs.com/news/new-editor/" target="_blank">demo presentation</a> for a quick overview.</p>', "<p>To enable the new editor, please visit the team settings page.</p>", '<a class="button positive" href="/edit#beta-features">Team settings</a>', '<a class="button grey dismiss-button">Dismiss</a>', "</section>"].join(""));
+                var e = $(['<section class="announcement">', "<h3>New Editor</h3>", '<p>We have released a new and greatly improved presentation editor. Have a look at the <a href="http://iinrs.com/" target="_blank">demo presentation</a> for a quick overview.</p>', "<p>To enable the new editor, please visit the team settings page.</p>", '<a class="button positive" href="/edit#beta-features">Team settings</a>', '<a class="button grey dismiss-button">Dismiss</a>', "</section>"].join(""));
                 e.find(".dismiss-button").on("click", function() {
                     e.remove(),
                     localStorage.setItem(t, "completed")

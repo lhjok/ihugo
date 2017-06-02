@@ -6838,13 +6838,14 @@ function(e, t) {
     }
     function F() {
         if (Qr.wrapper && !M()) {
-            var e = V();
+            var e = V(), JrN= 0;
             H(Xr.width, Xr.height),
             Qr.slides.style.width = e.width + "px",
             Qr.slides.style.height = e.height + "px",
             Jr = Math.min(e.presentationWidth / e.width, e.presentationHeight / e.height),
             Jr = Math.max(Jr, Xr.minScale),
             Jr = Math.min(Jr, Xr.maxScale),
+            Jr > 1 ? JrN = 1 : JrN = Jr,
             1 === Jr ? (Qr.slides.style.zoom = "",
             Qr.slides.style.left = "",
             Qr.slides.style.top = "",
@@ -6852,7 +6853,7 @@ function(e, t) {
             Qr.slides.style.right = "",
             x({
                 layout: ""
-            })) : Jr > 1 && en.zoom ? (Qr.slides.style.zoom = Jr,
+            })) : Jr > 1 && en.zoom ? (Qr.slides.style.zoom = JrN,
             Qr.slides.style.left = "",
             Qr.slides.style.top = "",
             Qr.slides.style.bottom = "",
@@ -6865,7 +6866,7 @@ function(e, t) {
             Qr.slides.style.bottom = "auto",
             Qr.slides.style.right = "auto",
             x({
-                layout: "translate(-50%, -50%) scale(" + Jr + ")"
+                layout: "translate(-50%, -50%) scale(" + JrN + ")"
             }));
             for (var t = v(Qr.wrapper.querySelectorAll(Or)), r = 0, n = t.length; n > r; r++) {
                 var a = t[r];
