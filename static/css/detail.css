@@ -15,7 +15,7 @@ del{text-decoration:line-through;}
 address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:500;}
 ol,ul{list-style:none;}
 caption,th{text-align:left;}
-h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:500;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:bold;}
 q:before,q:after{content:'';}
 sup{vertical-align:text-top;}
 sub{vertical-align:text-bottom;}
@@ -836,6 +836,12 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     line-height: 28px;
     text-indent: 30px;
 }
+.reveal .slides .content .post_mode p.item{
+    font-size: 15px;
+    line-height: 1.5;
+    text-indent: 0;
+    margin-bottom: 0;
+}
 .reveal .slides .content .post_mode li p{
     margin-bottom: 5px;
     text-indent: 0px;
@@ -999,12 +1005,6 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     -moz-border-radius: 5px;
     padding: 6px;
     background-color: #444;
-}
-.reveal .slides .content .post_mode p{
-    font-size: 15px;
-    line-height: 1.5;
-    text-indent: 0;
-    margin-bottom: 0;
 }
 .reveal .slides .content .post_mode img{
     -webkit-border-radius: 0;
