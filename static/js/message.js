@@ -10,26 +10,26 @@ $(document).ready(function(){
         });
     }, 1800);
 });
-$(".siteinfo").click(function(){
-    $(this).fadeOut(500, function(){
+$(".closes").click(function(){
+    $(".siteinfo").fadeOut(500, function(){
         $(this).remove();
     });
 });
 $(document).ready(function(){
     setTimeout(function() {
-        $('.Message').fadeOut(500, function(){
+        $(".Message").fadeOut(500, function(){
             $(this).css("display","block");
         });
     }, 1800);
 });
-$(".Message").click(function(){
-    $(this).fadeOut(500, function(){
+$(".ns-close").click(function(){
+    $(".Message").fadeOut(500, function(){
         $(this).remove();
     });
 });
 $(document).ready(function(){
     setTimeout(function() {
-        $('.Message').fadeOut(500, function(){
+        $(".Message").fadeOut(500, function(){
             $(this).remove();
         });
     }, 9000);
