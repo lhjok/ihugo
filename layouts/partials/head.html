@@ -17,11 +17,12 @@
 <link rel="stylesheet" type="text/css" href="../../css/message.css">
 <script src="../../js/jquery-1.11.3.min.js"></script>
 <script type="text/javascript">
+    var widths= 960, heights= 740, conwid= widths-285-25, taiwid= conwid-44;
 	var SLConfig = {
         "deck":{
             "id":888888,"slug":"iinrs","title":"如实尚品",
             "description":"「如实尚品」不一样的专业人工导购、精选优质商品、特价、折扣、秒杀、返利、隐藏优惠卷的购物网站",
-            "width":960,"height":740,"visibility":"all","published_at":"2017-06-01T14:29:13.725Z","sanitize_messages":null,
+            "width": widths,"height": heights,"visibility":"all","published_at":"2017-06-01T14:29:13.725Z","sanitize_messages":null,
             "thumbnail_url":"../../img/default-profile.png","view_count":8888,
             "user":{
                 "id":88888,"username":"iinrs","name":"lhjok",
@@ -36,7 +37,9 @@
         }
     };
     $(document).ready(function(){
-        $(".Sidebar,.content").css("height","740px");
+        $(".content").css("width", conwid += "px");
+        $(".Sidebar,.content").css("height", heights += "px");
+        $(".tailtips-top,.tailtips-bottom").css("width", taiwid += "px");
     });
 </script>
 {{ "<!--[if lt IE 10]>" | safeHTML }}
