@@ -15,6 +15,7 @@
 <link rel="stylesheet" type="text/css" href="../../css/slides.css">
 <link rel="stylesheet" type="text/css" href="../../css/detail.css">
 <link rel="stylesheet" type="text/css" href="../../css/message.css">
+<script src="../../js/jquery-1.11.3.min.js"></script>
 <script type="text/javascript">
 	var SLConfig = {
         "deck":{
@@ -34,6 +35,9 @@
             "rtl":false,"version":0,"collaborative":null,"deck_user_editor_limit":1,"data_updated_at":null,"font_typekit":null,"font_google":null
         }
     };
+    $(document).ready(function(){
+        $(".Sidebar,.content").css("height","740px");
+    });
 </script>
 {{ "<!--[if lt IE 10]>" | safeHTML }}
     <style type="text/css">
