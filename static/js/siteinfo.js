@@ -8,29 +8,19 @@ $(document).ready(function(){
         $('.siteinfo').fadeOut(500, function(){
             $(this).css("display","block");
         });
-    }, 1800);
+    }, 1000);
 });
 $(".closes").click(function(){
     $(".siteinfo").fadeOut(500, function(){
         $(this).remove();
     });
 });
+/*  // 自动关闭提示。
 $(document).ready(function(){
     setTimeout(function() {
-        $(".Message").fadeOut(500, function(){
-            $(this).css("display","block");
-        });
-    }, 1800);
-});
-$(".ns-close").click(function(){
-    $(".Message").fadeOut(500, function(){
-        $(this).remove();
-    });
-});
-$(document).ready(function(){
-    setTimeout(function() {
-        $(".Message").fadeOut(500, function(){
+        $(".siteinfo").fadeOut(500, function(){
             $(this).remove();
         });
     }, 9000);
 });
+*/

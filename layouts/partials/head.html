@@ -14,10 +14,21 @@
 <link rel="stylesheet" type="text/css" href="../../css/deck-v1.css">
 <link rel="stylesheet" type="text/css" href="../../css/slides.css">
 <link rel="stylesheet" type="text/css" href="../../css/detail.css">
-<link rel="stylesheet" type="text/css" href="../../css/message.css">
 <script src="../../js/jquery-1.11.3.min.js"></script>
 <script type="text/javascript">
-    var widths= 960, heights= 740, conwid= widths-285-25, taiwid= conwid-44;
+    var wwi= $(window).width(), whe= $(window).height();
+    if (wwi < 1350 || whe < 835) {
+        wwi= 960, whe= 740;
+        $(document).ready(function(){
+            $(".logo").css("margin-top", "35px");
+            $(".pro_detail_to").css("margin", "2px 28px 19px 0");
+            $(".img-area,.alink,.lazy").css({"width":"259px", "height":"259px"});
+            $(".zk-item").css({"width":"259px", "height":"350px"});
+        });
+    }else if (wwi >= 1350 || whe >= 835){
+        wwi= 1190, whe= 790;
+    }
+    var widths= wwi, heights= whe, conwid= widths-285-25, taiwid= conwid-44;
 	var SLConfig = {
         "deck":{
             "id":888888,"slug":"iinrs","title":"如实尚品",

@@ -451,7 +451,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     position:relative;
     width:285px;
     height:79px;
-    margin-top:35px;
+    margin-top:45px;
 }
 .reveal .slides .logo a{
     position:relative;
@@ -739,7 +739,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 .reveal .slides .content ul li p{text-indent: 0px;}
 .reveal .slides .content .titles {
     position: relative;
-    width: 590px;
+    width: 100%;
     height: 43px;
     margin-top: 12px;
     margin-bottom: 3px;
@@ -761,7 +761,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 }
 .reveal .slides .content .titles .time-share {
     position: relative;
-    float: left;
+    float: right;
     width: 150px;
     height: 43px;
     overflow: hidden;
@@ -804,6 +804,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     text-align: left;
     width: 100%;
     height: auto;
+    overflow:hidden;
 }
 .reveal .slides .content .post_mode hr{
     clear: both;
@@ -876,8 +877,8 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     padding: 0;
 }
 .reveal .slides .content .post_mode img{
-    width:auto;
-    height:auto;
+    width: 241px;
+    height: 241px;
     max-width:565px;
     border: 1px solid #222;
     border-radius: 5px;
@@ -1050,160 +1051,14 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     margin-top: 1px;
     margin-right: 6px;
 }
-.reveal .slides .content .post_mode .pro_detail{
-    position: relative;
-    height: 241px;
-    width: 590px;
-    display: block;
-    border: 1px solid #222;
-    background-color: #444;
-    margin-bottom: 18px;
-}
-.reveal .slides .content .post_mode .pro_detail a.imgs{
-    float: left;
-    display: block;
-    height:219px;
-    width:262px;
-    overflow:hidden;
-    margin: 10px 5px 10px 10px;
-}
-.reveal .slides .content .post_mode .pro_detail .pro_intro{
-    float: left;
-    height:239px;
-    width:311px;
-    overflow:hidden;
-}
-.reveal .slides .content .post_mode .pro_detail img.mCS_img_loaded{
-    height:264px;
-    width:264px;
-    background-color: #444;
-}
-.reveal .slides .content .post_mode .pro_detail .pro_intro .pro_title{
-    font-size: 14px;
-    padding:8px 10px 6px 10px;
-    max-height:68px;
-    line-height: 1.5;
-    text-indent: 0;
-    margin-top: 5px;
-    margin-bottom: 0;
-    overflow:hidden;
-}
-.reveal .slides .content .post_mode .pro_detail .pro_intro .pro_title a{
-    color: #ccc;
-    font-size:14px;
-}
-.reveal .slides .content .post_mode .pro_detail .pro_intro .pro_title a:hover{
-    color: #eee;
-}
-.reveal .slides .content .post_mode .pro_detail .pro_intro .pro_price{
-    padding-left:10px;
-    font-size:14px;
-    margin-top:13px;
-    color: #E54028;
-}
-.reveal .slides .content .post_mode .pro_detail .pro_intro .pro_price .iconfont{
-    color:#fb973e;
-    margin-right:5px;
-}
-.reveal .slides .content .post_mode .pro_detail .pro_intro .pro_price em{
-    padding:0 4px;
-    font-size:16px;
-    font-weight:bold;
-    color: #E54028;
-    font-family:Arial
-}
-.reveal .slides .content .post_mode .pro_detail .pro_intro .pro_price span{
-    font-family:Arial;
-    margin-left:6px
-}
-.reveal .slides .content .post_mode .pro_detail .pro_intro .residue{
-    padding-left:10px;
-    margin-top:10px;
-    font-size:12px;
-    color:#ccc
-}
-.reveal .slides .content .post_mode .pro_detail .pro_intro .residue i{
-    padding:0 5px;
-    color: #E54028;
-    font-size:14px;
-    font-family:Arial;
-}
-.reveal .slides .content .post_mode .pro_detail .pro_intro .residue span{
-    font-family:Arial;
-    font-size:14px
-}
-.reveal .slides .content .post_mode .pro_detail .pro_intro .pro_nowPri{
-    color:#fbe1ee;
-    opacity: 0.85;
-    width:92.5%;
-    height:42px;
-    line-height:36px;
-    font-size:13px;
-    border-radius: 3px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    background-color:#E54028;
-    margin-left:10px;
-    margin-top:10px;
-    padding: 5px 6px 6px 10px;
-}
-.reveal .slides .content .post_mode .pro_detail .pro_intro .pro_nowPri span{
-    float: left;
-    display: block;
-    width:auto;
-    height:32px;
-    line-height:35px;
-}
-.reveal .slides .content .post_mode .pro_detail .pro_intro .pro_nowPri em{
-    float: left;
-    width:auto;
-    height:32px;
-    font-size: 28px;
-    margin-left: 3px;
-    margin-right: 15px;
-    font-weight: bold;
-    font-family: Arial;
-    font-style: normal;
-    color:#FFFFFF;
-}
-.reveal .slides .content .post_mode .pro_detail .pro_intro .buy{
-    font-size:14px;
-    margin-left:10px;
-    margin-top:15px;
-}
-.reveal .slides .content .post_mode .pro_detail .pro_intro .buy .sp1{
-    color:#ccc
-}
-.reveal .slides .content .post_mode .pro_detail .pro_intro .buy a{
-    display:inline-block
-}
-.reveal .slides .content .post_mode .pro_detail .pro_intro .buy .indexBorder{
-    border:1px dashed #E54028;
-    padding:6px;
-    border-radius:6px;
-    color: #E54028;
-    display:inline-block;
-    cursor:pointer
-}
-.reveal .slides .content .post_mode .pro_detail .pro_intro .buy .indexBorder:hover{
-    background-color:yellow
-}
-.reveal .slides .content .post_mode .pro_detail .pro_intro .buy .indexto{
-    line-height:18px;
-    font-size:18px;
-    margin:0 8px;
-    text-align:center;
-    display:inline-block;
-    color:#ccc;
-    font-weight:bold
-}
-.reveal .slides .content .pro_detail1{
+.reveal .slides .content ul.pro_detail{
     position: relative;
     display: block;
-    width: 590px;
-    height: 347px;
-    margin-bottom: 18px;
+    width: 106%;
+    height: auto;
     padding: 0;
+    margin: 0;
+    overflow: hidden;
 }
 .reveal .slides .content .post_mode .pro_detail_to{
     position: relative;
@@ -1211,18 +1066,19 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     display: block;
     border: 1px solid #222;
     background-color: #444;
-    margin-right: 22px;
+    margin-right: 15px;
+    margin-bottom: 16px;
     padding: 9px 10px;
 }
 .reveal .slides .content .post_mode .zk-item {
-    width: 262px;
-    height: 329px;
+    width: 241px;
+    height: 332px;
 }
 .reveal .slides .content .post_mode .zk-item .img-area {
     position: relative;
-    width: 262px;
-    height: 240px;
-    overflow: hidden
+    width: 241px;
+    height: 241px;
+    overflow: hidden;
 }
 .reveal .slides .content .post_mode .zk-item .img-area .lq {
     position: absolute;
@@ -1292,21 +1148,20 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     font-style: normal;
     padding: 0 2px;
 }
-.reveal .slides .content .post_mode .zk-item .img-area a {
-    display: table-cell;
-    vertical-align: middle;
+.reveal .slides .content .post_mode .zk-item .img-area a.alink {
+    display: block;
     text-align: center;
-    width: 262px;
-    height: 262px;
+    width: 241px;
+    height: 241px;
 }
 .reveal .slides .content .post_mode .zk-item .img-area img {
     position: relative;
-    max-width: 262px;
-    max-height: 262px;
+    max-width: 400px;
+    max-height: 400px;
 }
 .reveal .slides .content .post_mode .zk-item .title-area {
     font-size: 12px;
-    padding: 7px 5px 0;
+    padding: 8px 5px 0;
     overflow: hidden;
 }
 .reveal .slides .content .post_mode .zk-item .title-area .post-free {
@@ -1324,7 +1179,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 .reveal .slides .content .post_mode .zk-item .raw-price-area {
     font-size: 13px;
     line-height: 17px;
-    padding: 7px 5px 0;
+    padding: 8px 5px 0;
 }
 .reveal .slides .content .post_mode .zk-item .raw-price-area .sold {
     font-size: 13px;
@@ -1333,26 +1188,16 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 }
 .reveal .slides .content .post_mode .zk-item .info {
     height: 40px;
-    padding: 8px 0 0;
+    padding: 9px 0 0;
     overflow: hidden;
 }
-.reveal .slides .content .pro_detail2 .tab01 .tabtitle .price-area,
 .reveal .slides .content .post_mode .zk-item .info .price-area {
     float: left;
-    width: 154px;
+    width: 162px;
     height: 27px;
     color: #FF2B22;
     padding-left: 5px;
     margin-top: 2px;
-}
-.reveal .slides .content .pro_detail2 .tab01 .tabtitle .price-area .price{
-    position: relative;
-    float: left;
-    height: 27px;
-    line-height: 30px;
-    font-size: 16px;
-    font-weight: 700;
-    margin: 0;
 }
 .reveal .slides .content .post_mode .zk-item .info .price-area .price {
     position: relative;
@@ -1363,8 +1208,6 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     font-weight: 700;
     margin: 0;
 }
-.reveal .slides .content .pro_detail2 .tab01 .tabtitle .price-area em.decimal,
-.reveal .slides .content .pro_detail2 .tab01 .tabtitle .price-area em.number-font,
 .reveal .slides .content .post_mode .zk-item .info .price-area em.decimal,
 .reveal .slides .content .post_mode .zk-item .info .price-area em.number-font {
     position: relative;
@@ -1376,11 +1219,9 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     font-style: normal;
     margin: 0;
 }
-.reveal .slides .content .pro_detail2 .tab01 .tabtitle .price-area em.decimal,
 .reveal .slides .content .post_mode .zk-item .info .price-area em.decimal{
     margin-right: 3px;
 }
-.reveal .slides .content .pro_detail2 .tab01 .tabtitle .price-area i,
 .reveal .slides .content .post_mode .zk-item .info .price-area i {
     position: relative;
     float: left;
@@ -1390,21 +1231,11 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     background-size: 47px 19px;
     margin-top: 4px;
 }
-.reveal .slides .content .pro_detail2 .tab01 .tabtitle .price-area em.number-font{
-    height: 27px;
-    line-height: 32px;
-    font-size: 23px;
-}
 .reveal .slides .content .post_mode .zk-item .info .price-area em.number-font {
     height: 27px;
     line-height: 30px;
     font-size: 28px;
     padding-left: 2px
-}
-.reveal .slides .content .pro_detail2 .tab01 .tabtitle .price-area em.decimal{
-    height: 27px;
-    line-height: 32px;
-    font-size: 20px;
 }
 .reveal .slides .content .post_mode .zk-item .info .price-area em.decimal {
     height: 27px;
@@ -1424,7 +1255,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     float: right;
     height: 25px;
     font-size: 12px;
-    line-height: 27px;
+    line-height: 28px;
 }
 @media screen and (min-width: 641px) {
     .reveal .slides .content .post_mode .zk-item:hover .img-area .bottom-info {
@@ -1436,7 +1267,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 }
 .reveal .slides .content .post_mode .zk-item .info .platform-area img {
     position: relative;
-    top: 3px;
+    top: 4px;
     display: inline-block;
     width: 20px;
     height: 20px;
@@ -1448,7 +1279,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 .reveal .slides .content .post_mode .zk-item .info .buy-area {
     display: none;
     float: right;
-    width: 108px;
+    width: 79px;
     background-color: #E54028;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -1464,7 +1295,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 .reveal .slides .content .post_mode .zk-item .info .buy-area .btn-title {
     display: block;
     float: left;
-    width: 62px;
+    width: 42px;
     height: 25px;
     font-size: 12px;
     text-align: center;
@@ -1474,7 +1305,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 .reveal .slides .content .post_mode .zk-item .info .buy-area .coupon-amount {
     display: block;
     float: left;
-    width: 45px;
+    width: 33px;
     height: 25px;
     margin: 1px 0 1px 1px;
     background-color: #444;
@@ -1488,117 +1319,6 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     font-size: 16px;
     padding-right: 0;
     font-style: normal
-}
-.reveal .slides .content .pro_detail2{
-    position: relative;
-    display: block;
-    width: 590px;
-    height: auto;
-    margin-bottom: 20px;
-    border: 1px solid #222;
-    background-color: #444;
-    padding: 8px;
-}
-.reveal .slides .content .pro_detail2 .tabs{
-    width: 571px;
-    height: 455px;
-    border-left: 1px solid #8b8b8b;
-    border-top: 1px solid #8b8b8b;
-    margin: 0;
-}
-.reveal .slides .content .pro_detail2 .tab01{
-    position: relative;
-    float: left;
-    display: block;
-    width: 190px;
-    height: 227px;
-    border-right: 1px solid #8b8b8b;
-    border-bottom: 1px solid #8b8b8b;
-    padding: 0;
-}
-.reveal .slides .content .pro_detail2 .tab01 a.tabsimg{
-    display: block;
-    height:189px;
-    width:189px;
-    overflow:hidden;
-}
-.reveal .slides .content .pro_detail2 .tab01 a.tabsimg img{
-    display: block;
-    height:189px;
-    width:189px;
-    overflow:hidden;
-}
-.reveal .slides .content .pro_detail2 .tab01 .tabtitle{
-    height:37px;
-    width:189px;
-    border-top: 1px solid #8b8b8b;
-}
-.reveal .slides .content .pro_detail2 .tab01 .tabtitle .price-area{
-    width: 139px;
-    height:32px;
-    margin-top: 5px;
-    padding-left: 6px;
-}
-.reveal .slides .content .pro_detail2 .tab01 .tabtitle .yuanjia{
-    display: block;
-    float: left;
-    width: 50px;
-    height:35px;
-    margin-top: 1px;
-    font-size: 12px;
-    line-height: 1.4;
-}
-.reveal .slides .content .pro_detail2 .tab01 a.tabsimg .bottom-info{
-    position: absolute;
-    width: 189px;
-    height: 28px;
-    opacity: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,.6);
-    -webkit-transition: opacity .3s ease;
-    -moz-transition: opacity .3s ease;
-    -ms-transition: opacity .3s ease;
-    transition: opacity .3s ease;
-    z-index: 9;
-}
-.reveal .slides .content .pro_detail2 .tab01 a.tabsimg .bottom-info .title-area {
-    position: relative;
-    float: left;
-    display: block;
-    width: 189px;
-    height: 28px;
-    line-height: 28px;
-    font-size: 12px;
-    padding: 5px 5px 0;
-    overflow: hidden;
-}
-.reveal .slides .content .pro_detail2 .tab01 a.tabsimg .bottom-info .title-area span{
-    position: relative;
-    float: left;
-    display: block;
-    height: 16px;
-    line-height: 16px;
-    color: #ccc;
-    font-size: 12px;
-}
-.reveal .slides .content .pro_detail2 .tab01 a.tabsimg .bottom-info .title-area .post-free {
-    position: relative;
-    float: left;
-    display: block;
-    height: 16px;
-    padding: 0 2px;
-    font-size: 12px;
-    font-style: normal;
-    line-height: 14px;
-    color: #fff;
-    text-align: center;
-    background-color: #E54028;
-    margin-top: 1px;
-    margin-right: 5px;
-    border-radius: 1px;
-}
-.reveal .slides .content .pro_detail2 .tab01 a.tabsimg:hover .bottom-info {
-    opacity: 1;
 }
 .hljs {
     color: #dcdcdc;
