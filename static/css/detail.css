@@ -451,7 +451,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     position:relative;
     width:285px;
     height:79px;
-    margin-top:45px;
+    margin-top:50px;
 }
 .reveal .slides .logo a{
     position:relative;
@@ -582,8 +582,8 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 }
 .reveal .slides .home{
     position: absolute;
-    right: -53px;
-    bottom: 168px;
+    right: -56px;
+    bottom: 172px;
     width: 38px;
     height: 38px;
 }
@@ -673,8 +673,8 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 }
 .reveal .slides .retop{
     position: absolute;
-    right: -53px;
-    bottom: 115px;
+    right: -56px;
+    bottom: 116px;
     width: 38px;
     height: 38px;
 }
@@ -877,8 +877,8 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     padding: 0;
 }
 .reveal .slides .content .post_mode img{
-    width: 241px;
-    height: 241px;
+    width: 225px;
+    height: 225px;
     max-width:565px;
     border: 1px solid #222;
     border-radius: 5px;
@@ -1068,16 +1068,16 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     background-color: #444;
     margin-right: 15px;
     margin-bottom: 16px;
-    padding: 9px 10px;
+    padding: 7px 8px;
 }
 .reveal .slides .content .post_mode .zk-item {
-    width: 241px;
-    height: 332px;
+    width: 225px;
+    height: 315px;
 }
 .reveal .slides .content .post_mode .zk-item .img-area {
     position: relative;
-    width: 241px;
-    height: 241px;
+    width: 225px;
+    height: 225px;
     overflow: hidden;
 }
 .reveal .slides .content .post_mode .zk-item .img-area .lq {
@@ -1151,8 +1151,8 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 .reveal .slides .content .post_mode .zk-item .img-area a.alink {
     display: block;
     text-align: center;
-    width: 241px;
-    height: 241px;
+    width: 225px;
+    height: 225px;
 }
 .reveal .slides .content .post_mode .zk-item .img-area img {
     position: relative;
@@ -1187,13 +1187,13 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     float: right
 }
 .reveal .slides .content .post_mode .zk-item .info {
-    height: 40px;
+    height: 39px;
     padding: 9px 0 0;
     overflow: hidden;
 }
 .reveal .slides .content .post_mode .zk-item .info .price-area {
     float: left;
-    width: 162px;
+    width: 146px;
     height: 27px;
     color: #FF2B22;
     padding-left: 5px;
