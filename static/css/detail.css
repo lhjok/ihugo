@@ -1195,7 +1195,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 }
 .reveal .slides .content .post_mode .zk-item .info .price-area {
     float: left;
-    width: 146px;
+    width: 63%;
     height: 27px;
     color: #FF2B22;
     padding-left: 5px;
@@ -1247,17 +1247,19 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 .reveal .slides .content .post_mode .zk-item .info .platform-area {
     display: block;
     float: right;
-    height: 25px;
-    margin-right: 5px;
+    width: 37%;
+    height: 27px;
     font-size: 12px;
     line-height: 20px;
+    margin-top: 2px;
 }
 .reveal .slides .content .post_mode .zk-item .info .platform-area span{
     display: block;
     float: right;
     height: 25px;
     font-size: 12px;
-    line-height: 28px;
+    line-height: 27px;
+    margin-right: 5px;
 }
 @media screen and (min-width: 641px) {
     .reveal .slides .content .post_mode .zk-item:hover .img-area .bottom-info {
@@ -1269,7 +1271,8 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 }
 .reveal .slides .content .post_mode .zk-item .info .platform-area img {
     position: relative;
-    top: 4px;
+    float: right;
+    top: 3px;
     display: inline-block;
     width: 20px;
     height: 20px;
@@ -1282,6 +1285,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     display: none;
     float: right;
     width: 79px;
+    height: 27px;
     background-color: #E54028;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
