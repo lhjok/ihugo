@@ -1156,6 +1156,8 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 }
 .reveal .slides .content .post_mode .zk-item .img-area img {
     position: relative;
+    width: 100%;
+    height: auto;
     max-width: 400px;
     max-height: 400px;
 }
