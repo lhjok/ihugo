@@ -240,6 +240,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     display: none;
 }
 .reveal .slides .content .post_mode .swiper-slide {
+    -webkit-overflow-scrolling: touch;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
