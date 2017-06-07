@@ -207,10 +207,21 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 .reveal .slides .content ul{width:573px;margin-left:25px;}
 .reveal .slides .content ul li {list-style: disc;}
 .reveal .slides .content ul li p{text-indent: 0px;}
-.reveal .slides .content .titles {
+.reveal .slides .content .post_mode,
+.reveal .slides .content .post_mode .swiper-slide {
+    position: relative;
+    display: block;
+    text-align: left;
+    width: 100%;
+    height: auto;
+    overflow:hidden;
+    padding: 0;
+    margin: 0;
+}
+.reveal .slides .content .post_mode .titles {
     display: none;
 }
-.reveal .slides .content .titles .post_title {
+.reveal .slides .content .post_mode .titles .post_title {
     position: relative;
     float: left;
     color: #13daec;
@@ -225,16 +236,8 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     padding: 0;
     margin: 0;
 }
-.reveal .slides .content .titles .time-share {
+.reveal .slides .content .post_mode .titles .time-share {
     display: none;
-}
-.reveal .slides .content .post_mode,
-.reveal .slides .content .post_mode .swiper-slide {
-    position: relative;
-    text-align: left;
-    width: 100%;
-    height: auto;
-    overflow:hidden;
 }
 .reveal .slides .content .post_mode .swiper-slide {
     -webkit-box-sizing: border-box;
@@ -254,13 +257,14 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     font-family: "Microsoft YaHei",Tahoma,Monaco,"DejaVu Sans Mono",Arial;
     font-size: 1.1em;
 }
-.reveal .slides .content .post_mode h1{font-size:0.60em;margin-bottom:12px;}
-.reveal .slides .content .post_mode h2{font-size:0.55em;margin-bottom:12px;}
-.reveal .slides .content .post_mode h3{font-size:0.50em;margin-bottom:12px;}
-.reveal .slides .content .post_mode h4{font-size:0.45em;margin-bottom:12px;}
-.reveal .slides .content .post_mode h5{font-size:0.40em;margin-bottom:12px;}
-.reveal .slides .content .post_mode h6{font-size:0.35em;margin-bottom:12px;}
+.reveal .slides .content .post_mode h1{display: block;font-size:0.60em;margin-bottom:12px;}
+.reveal .slides .content .post_mode h2{display: block;font-size:0.55em;margin-bottom:12px;}
+.reveal .slides .content .post_mode h3{display: block;font-size:0.50em;margin-bottom:12px;}
+.reveal .slides .content .post_mode h4{display: block;font-size:0.45em;margin-bottom:12px;}
+.reveal .slides .content .post_mode h5{display: block;font-size:0.40em;margin-bottom:12px;}
+.reveal .slides .content .post_mode h6{display: block;font-size:0.35em;margin-bottom:12px;}
 .reveal .slides .content .post_mode p{
+    display: block;
     font-family: "Microsoft YaHei",Tahoma,Monaco,"DejaVu Sans Mono",Arial;
     font-size: 0.42em;
     margin-bottom: 12px;
@@ -274,6 +278,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     margin-bottom: 0;
 }
 .reveal .slides .content .post_mode li p{
+    display: block;
     margin-bottom: 5px;
     text-indent: 0px;
 }
@@ -436,7 +441,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     text-align: center;
 }
 .reveal .slides .content .post_mode .zk-item .img-area .lq .lq-t .lq-t-d2 em {
-    font-size: 0.8em;
+    font-size: 1em;
     font-weight: bold;
     font-style: normal;
 }
@@ -577,7 +582,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     display: block;
     float: right;
     height: 25px;
-    font-size: 0.95em;
+    font-size: 1em;
     line-height: 2.9;
     margin-right: 5px;
 }

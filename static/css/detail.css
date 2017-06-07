@@ -737,14 +737,22 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 .reveal .slides .content ul{width:573px;margin-left:25px;}
 .reveal .slides .content ul li {list-style: disc;}
 .reveal .slides .content ul li p{text-indent: 0px;}
-.reveal .slides .content .titles {
+.reveal .slides .content .post_mode,
+.reveal .slides .content .post_mode .swiper-slide {
+    position: relative;
+    text-align: left;
+    width: 100%;
+    height: auto;
+    overflow:hidden;
+}
+.reveal .slides .content .post_mode .titles {
     position: relative;
     width: 100%;
     height: 43px;
     margin-top: 12px;
     margin-bottom: 3px;
 }
-.reveal .slides .content .titles .post_title {
+.reveal .slides .content .post_mode .titles .post_title {
     position: relative;
     float: left;
     color: #13daec;
@@ -759,14 +767,14 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     padding: 0;
     margin: 0;
 }
-.reveal .slides .content .titles .time-share {
+.reveal .slides .content .post_mode .titles .time-share {
     position: relative;
     float: right;
     width: 150px;
     height: 43px;
     overflow: hidden;
 }
-.reveal .slides .content .titles .time-share .time {
+.reveal .slides .content .post_mode .titles .time-share .time {
     position: relative;
     float: left;
     width: 103px;
@@ -777,7 +785,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     text-align: right;
     margin-top: 12px;
 }
-.reveal .slides .content .titles .time-share .share-weibo {
+.reveal .slides .content .post_mode .titles .time-share .share-weibo {
     position: relative;
     float: left;
     width: 45px;
@@ -786,7 +794,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     display: inline;
     margin-top: 13px;
 }
-.reveal .slides .content .titles .time-share .share-weibo a {
+.reveal .slides .content .post_mode .titles .time-share .share-weibo a {
     position: relative;
     float: left;
     display: inline-block;
@@ -796,16 +804,8 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     background-repeat: no-repeat;
     margin-left: 6px;
 }
-.reveal .slides .content .titles .time-share .share-weibo .tencent-weibo {
+.reveal .slides .content .post_mode .titles .time-share .share-weibo .tencent-weibo {
     background-position: 0 -16px;
-}
-.reveal .slides .content .post_mode,
-.reveal .slides .content .post_mode .swiper-slide{
-    position: relative;
-    text-align: left;
-    width: 100%;
-    height: auto;
-    overflow:hidden;
 }
 .reveal .slides .content .post_mode hr{
     clear: both;
