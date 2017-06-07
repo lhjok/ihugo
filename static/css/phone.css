@@ -52,29 +52,9 @@ body{
     -ms-touch-action:none;
     touch-action:none;
 }
-.present .wrapper {
-	position: relative;
-	overflow: hidden;
-	-ms-touch-action: none;
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-	-webkit-text-size-adjust: none;
-	-moz-text-size-adjust: none;
-	-ms-text-size-adjust: none;
-	-o-text-size-adjust: none;
-	text-size-adjust: none;
-}
-.present .scroller {
-	position: absolute;
-	-webkit-tap-highlight-color: rgba(0,0,0,0);
-	-webkit-transform: translateZ(0);
-	-moz-transform: translateZ(0);
-	-ms-transform: translateZ(0);
-	-o-transform: translateZ(0);
-	transform: translateZ(0);
+.swiper-slide {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 .reveal iframe,.reveal h1,.reveal h2,.reveal h3,.reveal h4,.reveal h5,
