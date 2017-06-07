@@ -52,6 +52,30 @@ body{
     -ms-touch-action:none;
     touch-action:none;
 }
+.present .wrapper {
+	position: relative;
+	overflow: hidden;
+	-ms-touch-action: none;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	-o-text-size-adjust: none;
+	text-size-adjust: none;
+}
+.present .scroller {
+	position: absolute;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-o-transform: translateZ(0);
+	transform: translateZ(0);
+}
 html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 .reveal iframe,.reveal h1,.reveal h2,.reveal h3,.reveal h4,.reveal h5,
 .reveal h6,.reveal p,.reveal blockquote,.reveal pre,.reveal a,
@@ -378,10 +402,9 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     width: 48%;
     float: left;
     display: block;
-    border: 1px solid #222;
     background-color: #444;
     margin-right: 2%;
-    margin-bottom: 1.8%;
+    margin-bottom: 2%;
     padding: 0;
 }
 .reveal .slides .content .post_mode .zk-item {
@@ -409,15 +432,15 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     border-radius: 0 0 0 6px;
     -webkit-border-radius: 0 0 0 6px;
     -moz-border-radius: 0 0 0 6px;
-    padding: 0 5px;
+    padding: 2px 5px 2px 5px;
     overflow: hidden;
 }
 .reveal .slides .content .post_mode .zk-item .img-area .lq .lq-t .lq-t-d1 {
     display: block;
     font-size: 0.3em;
     font-weight: 700;
-    line-height: 20px;
-    height: 25px;
+    line-height: 1.65em;
+    height: auto;
     color: #fff;
     text-align: center;
 }
@@ -425,8 +448,8 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     display: block;
     font-size: 0.3em;
     font-weight: 700;
-    line-height: 0.4em;
-    height: 25px;
+    line-height: 1.2em;
+    height: auto;
     color: #fff;
     padding-top: 0;
     text-align: center;
@@ -480,20 +503,21 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 }
 .reveal .slides .content .post_mode .zk-item .title-area {
     font-size: 0.3em;
+    line-height: 1.35em;
     padding: 3px 5px 0;
     overflow: hidden;
 }
 .reveal .slides .content .post_mode .zk-item .title-area .post-free {
     display: inline-block;
-    height: 16px;
-    padding: 0 2px;
-    font-size: 0.3em;
-    line-height: 14px;
+    width: auto;
+    height: auto;
+    font-size: 0.75em;
     color: #fff;
     text-align: center;
     background-color: #E54028;
-    margin-right: 5px;
-    border-radius: 1px
+    border-radius: 2px;
+    padding: 0 2px 0 1px;
+    margin-right: 3px;
 }
 .reveal .slides .content .post_mode .zk-item .raw-price-area {
     font-size: 0.3em;
@@ -501,7 +525,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     padding: 4px 5px 0;
 }
 .reveal .slides .content .post_mode .zk-item .raw-price-area .sold {
-    font-size: 0.3em;
+    font-size: 0.95em;
     line-height: 17px;
     float: right
 }
@@ -516,13 +540,12 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     height: 27px;
     color: #FF2B22;
     padding-left: 5px;
-    margin-top: 2px;
 }
 .reveal .slides .content .post_mode .zk-item .info .price-area .price {
     position: relative;
     float: left;
     height: 27px;
-    line-height: 2.1em;
+    line-height: 2.3em;
     font-size: 0.36em;
     font-weight: 700;
     margin: 0;
@@ -548,7 +571,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     height: 16px;
     background: url(../img/quanhoujia.png) center no-repeat;
     background-size: 40px 16px;
-    margin-top: 6px;
+    margin-top: 7px;
 }
 .reveal .slides .content .post_mode .zk-item .info .price-area em.number-font {
     height: 27px;
@@ -558,14 +581,14 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 }
 .reveal .slides .content .post_mode .zk-item .info .price-area em.decimal {
     height: 27px;
-    line-height: 2.2em;
+    line-height: 2.3em;
     font-size: 0.38em;
 }
 .reveal .slides .content .post_mode .zk-item .info .platform-area {
     display: block;
     float: right;
     width: 32%;
-    height: 25px;
+    height: 27px;
     font-size: 0.3em;
     line-height: 20px;
 }
@@ -573,8 +596,8 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     display: block;
     float: right;
     height: 25px;
-    font-size: 0.4em;
-    line-height: 28px;
+    font-size: 0.95em;
+    line-height: 2.9;
     margin-right: 5px;
 }
 @media screen and (min-width: 641px) {
