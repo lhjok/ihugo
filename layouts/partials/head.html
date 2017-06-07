@@ -56,15 +56,15 @@
             $(".titles,.Sidebar,.tailtips-top,.tailtips-bottom,.home,.retop").remove();
             $(".swiper-container,.content").css({"width": wwi += "px", "height": whe += "px"});
         });
-        $.getScript("../../js/swiper.jquery.min.js");
-        $(document).ready(function () {
+        $.getScript("../../js/swiper.min.js");
+        window.onload = function() {
             var swiper = new Swiper('.swiper-container', {
                 direction: 'vertical',
                 slidesPerView: 'auto',
                 mousewheelControl: false,
                 freeMode: true
             });
-        });
+        }
     }else if (wwi > 860){
         $.getScript("../../js/scrollbar.js");
         $(document).ready(function(){
