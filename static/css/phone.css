@@ -52,10 +52,6 @@ body{
     -ms-touch-action:none;
     touch-action:none;
 }
-.swiper-slide {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
 html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 .reveal iframe,.reveal h1,.reveal h2,.reveal h3,.reveal h4,.reveal h5,
 .reveal h6,.reveal p,.reveal blockquote,.reveal pre,.reveal a,
@@ -232,12 +228,17 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 .reveal .slides .content .titles .time-share {
     display: none;
 }
-.reveal .slides .content .post_mode{
+.reveal .slides .content .post_mode,
+.reveal .slides .content .post_mode .swiper-slide {
     position: relative;
     text-align: left;
     width: 100%;
     height: auto;
     overflow:hidden;
+}
+.reveal .slides .content .post_mode .swiper-slide {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 .reveal .slides .content .post_mode hr{
     clear: both;

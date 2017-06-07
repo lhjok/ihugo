@@ -5,14 +5,18 @@
             <div class="tailtips-top"></div>
             {{ partial "sidebar.html" . }}
             <div class="content mCustomScrollbar swiper-container" data-mcs-theme="minimal">
-                <div class="titles">
-                    <div class="post_title">{{ .Title }}</div>
-                    <div class="time-share">
-                        <div class="time">{{ .Date.Format "2006-01-02" }}</div>
-                        <div class="share-weibo">{{ partial "share.html" . }}</div>
+                <div class="post_mode swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="titles">
+                            <div class="post_title">{{ .Title }}</div>
+                            <div class="time-share">
+                                <div class="time">{{ .Date.Format "2006-01-02" }}</div>
+                                <div class="share-weibo">{{ partial "share.html" . }}</div>
+                            </div>
+                        </div>
+                        {{ .Content }}
                     </div>
                 </div>
-                <div class="post_mode swiper-wrapper">{{ .Content }}</div>
             </div>
             <div class="home">
                 <a href="{{ $.Site.BaseURL }}" title="回首页">

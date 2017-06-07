@@ -799,7 +799,8 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 .reveal .slides .content .titles .time-share .share-weibo .tencent-weibo {
     background-position: 0 -16px;
 }
-.reveal .slides .content .post_mode{
+.reveal .slides .content .post_mode,
+.reveal .slides .content .post_mode .swiper-slide{
     position: relative;
     text-align: left;
     width: 100%;
