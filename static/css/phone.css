@@ -36,7 +36,7 @@ html:-moz-full-screen-ancestor {
 }
 body{
     position:relative;
-    font-size: 0.35em;
+    font-size: 0.7em;
     font-family: "Microsoft YaHei",Tahoma,Monaco,"DejaVu Sans Mono",Arial;
     background-color: #2e2e2e;
 }
@@ -44,7 +44,7 @@ body{
     position:relative;
     color:#eeeeee;
     font-family: Verdana,"Microsoft YaHei",Tahoma,Monaco,"DejaVu Sans Mono",Arial;
-    font-size: 0.35em;
+    font-size: 0.65em;
     font-weight:normal;
     width:100%;
     height:100%;
@@ -140,7 +140,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 .reveal sub {vertical-align: sub;}
 .reveal small {
     display: inline-block;
-    font-size: 0.3em;
+    font-size: 0.65em;
     line-height: 1.2em;
     vertical-align: top;
 }
@@ -226,8 +226,8 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     position: relative;
     width: 2.0em;
     height: 3.5em;
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 .controls-arrow:before,
 .controls-arrow:after{
@@ -270,22 +270,6 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 }
 .reveal .slides .Sidebar{
     display: none;
-}
-@-webkit-keyframes rotate{
-    from{-webkit-transform:rotate(0deg)}
-    to{-webkit-transform:rotate(360deg)}
-}
-@-moz-keyframes rotate{
-    from{-moz-transform:rotate(0deg)}
-    to{-moz-transform:rotate(360deg)}
-}
-@-ms-keyframes rotate{
-    from{-ms-transform:rotate(0deg)}
-    to{-ms-transform:rotate(360deg)}
-}
-@-o-keyframes rotate{
-    from{-o-transform:rotate(0deg)}
-    to{-o-transform:rotate(360deg)}
 }
 .reveal .slides .content{
     position:relative;
@@ -332,7 +316,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     height: auto;
     line-height: 33px;
     text-align: left;
-    font-size: 0.50em;
+    font-size: 1.6em;
     font-family: Tahoma,Monaco,"DejaVu Sans Mono",Arial;
     font-weight: bold;
     overflow: hidden;
@@ -370,13 +354,13 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 .reveal .slides .content .post_mode p{
     display: block;
     font-family: "Microsoft YaHei",Tahoma,Monaco,"DejaVu Sans Mono",Arial;
-    font-size: 0.42em;
+    font-size: 0.68em;
     margin-bottom: 12px;
     line-height: 28px;
     text-indent: 30px;
 }
 .reveal .slides .content .post_mode p.item{
-    font-size: 0.3em;
+    font-size: 0.68em;
     line-height: 1.5;
     text-indent: 0;
     margin-bottom: 0;
@@ -388,7 +372,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 }
 .reveal .slides .content .post_mode code{
     font-family: "Source Code Pro", Monaco, Menlo, Consolas, "DejaVu Sans Mono", monospace;
-    font-size: 0.35em;
+    font-size: 0.8em;
     background-color: #333;
     border: 1px solid #2a2a2a;
     border-radius: 3px;
@@ -399,7 +383,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 }
 .reveal .slides .content .post_mode pre{
     font-family: "Source Code Pro", Monaco, Menlo, Consolas, "DejaVu Sans Mono", monospace;
-    font-size: 0.35em;
+    font-size: 0.7em;
     background-color: #444;
     border: 1px solid #2a2a2a;
     border-left-width: 6px;
@@ -413,7 +397,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 .reveal .slides .content .post_mode pre code{
     font-family: "Source Code Pro", Monaco, Menlo, Consolas, "DejaVu Sans Mono", monospace;
     line-height: 19px;
-    font-size: 0.35em;
+    font-size: 0.7em;
     background-color: transparent;
     display: block;
     border: none;
@@ -516,7 +500,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     z-index: 1;
 }
 .reveal .slides .content .post_mode .zk-item .img-area .lq .lq-t {
-    height: 39px;
+    height: 37px;
     font-weight: normal;
     background-color: #E54028;
     border-radius: 0 0 0 6px;
@@ -527,7 +511,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 }
 .reveal .slides .content .post_mode .zk-item .img-area .lq .lq-t .lq-t-d1 {
     display: block;
-    font-size: 0.3em;
+    font-size: 1.1em;
     font-weight: 700;
     line-height: 1.65em;
     height: auto;
@@ -536,9 +520,9 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 }
 .reveal .slides .content .post_mode .zk-item .img-area .lq .lq-t .lq-t-d2 {
     display: block;
-    font-size: 0.3em;
+    font-size: 1.1em;
     font-weight: 700;
-    line-height: 1.2em;
+    line-height: 1.1em;
     height: auto;
     color: #fff;
     padding-top: 0;
@@ -566,7 +550,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     transition: opacity .3s ease
 }
 .reveal .slides .content .post_mode .zk-item .img-area .bottom-info .time-count {
-    font-size: 0.3em;
+    font-size: 0.8em;
     color: #fff;
     line-height: 28px;
     padding-left: 10px;
@@ -592,7 +576,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     max-height: 400px;
 }
 .reveal .slides .content .post_mode .zk-item .title-area {
-    font-size: 0.3em;
+    font-size: 1em;
     line-height: 1.35em;
     padding: 3px 5px 0;
     overflow: hidden;
@@ -601,7 +585,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     display: inline-block;
     width: auto;
     height: auto;
-    font-size: 0.75em;
+    font-size: 0.9em;
     color: #fff;
     text-align: center;
     background-color: #E54028;
@@ -610,7 +594,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     margin-right: 3px;
 }
 .reveal .slides .content .post_mode .zk-item .raw-price-area {
-    font-size: 0.3em;
+    font-size: 1.05em;
     line-height: 17px;
     padding: 4px 5px 0;
 }
@@ -626,7 +610,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 }
 .reveal .slides .content .post_mode .zk-item .info .price-area {
     float: left;
-    width: 68%;
+    width: 65%;
     height: 27px;
     color: #FF2B22;
     padding-left: 5px;
@@ -635,8 +619,8 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     position: relative;
     float: left;
     height: 27px;
-    line-height: 3.5em;
-    font-size: 0.36em;
+    line-height: 2.25em;
+    font-size: 1.3em;
     font-weight: 700;
     margin: 0;
 }
@@ -666,27 +650,27 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 .reveal .slides .content .post_mode .zk-item .info .price-area em.number-font {
     height: 27px;
     line-height: 30px;
-    font-size: 0.53em;
+    font-size: 1.9em;
     padding-left: 2px
 }
 .reveal .slides .content .post_mode .zk-item .info .price-area em.decimal {
     height: 27px;
-    line-height: 3.5em;
-    font-size: 0.38em;
+    line-height: 2.25em;
+    font-size: 1.3em;
 }
 .reveal .slides .content .post_mode .zk-item .info .platform-area {
     display: block;
     float: right;
     width: 32%;
     height: 27px;
-    font-size: 0.3em;
+    font-size: 1.0em;
     line-height: 20px;
 }
 .reveal .slides .content .post_mode .zk-item .info .platform-area span{
     display: block;
     float: right;
     height: 25px;
-    font-size: 1em;
+    font-size: 1.01em;
     line-height: 2.9;
     margin-right: 5px;
 }
