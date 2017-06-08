@@ -4,13 +4,18 @@
     <body class="reveal-viewport theme-font-league theme-color-grey-blue" onresize="location.reload()">
         <div id="fakeLoader"></div>
         {{ partial "script.html" . }}
-        <div class="reveal">
-            <div class="slides">
+        <div class="reveal swiper-container swiper-container-h">
+            <div class="slides swiper-wrapper">
                 {{ partial "post.html" . }}
             </div>
             <script src="../../js/siteinfo.js"></script>
         </div>
         <script type="text/javascript">
+            if (wwi < 860) {
+                document.writeln("<div class=\'swiper-pagination\'><div class=\'controls-arrow\'></div></div>");
+                document.writeln("<div class=\'swiper-button-next\'><div class=\'controls-arrow\'></div></div>");
+                document.writeln("<div class=\'swiper-button-prev\'><div class=\'controls-arrow\'></div></div>");
+            }
             $("#fakeLoader").fakeLoader({
                 timeToHide:800,
                 zIndex:999,

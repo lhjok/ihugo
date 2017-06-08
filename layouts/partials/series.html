@@ -1,9 +1,9 @@
 {{ range .Data.Pages.GroupByPublishDate "2006-01" "asc" }}
     {{ range first 10 .Pages }}
-    <section>
+    <section class="swiper-slide">
         <div class="tailtips-top"></div>
         {{ partial "sidebar.html" . }}
-        <div class="content mCustomScrollbar swiper-container" data-mcs-theme="minimal">
+        <div class="content mCustomScrollbar swiper-container swiper-container-v" data-mcs-theme="minimal">
             <div class="post_mode swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="titles">

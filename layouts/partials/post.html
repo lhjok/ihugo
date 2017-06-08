@@ -1,19 +1,21 @@
 {{ range .Data.Pages.GroupByPublishDate "2006-01" "asc" }}
-    {{ range $index, $value := first 10 .Pages }}
+    {{ range first 10 .Pages }}
         {{ if isset .Params "index" }}
-        <section>
+        <section class="swiper-slide">
             <div class="tailtips-top"></div>
             {{ partial "sidebar.html" . }}
-            <div class="content mCustomScrollbar wrapper{{ $index }}" data-mcs-theme="minimal">
-                <div class="post_mode scroller">
-                    <div class="titles">
-                        <div class="post_title">{{ .Title }}</div>
-                        <div class="time-share">
-                            <div class="time">{{ .Date.Format "2006-01-02" }}</div>
-                            <div class="share-weibo">{{ partial "share.html" . }}</div>
+            <div class="content mCustomScrollbar swiper-container swiper-container-v" data-mcs-theme="minimal">
+                <div class="post_mode swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="titles">
+                            <div class="post_title">{{ .Title }}</div>
+                            <div class="time-share">
+                                <div class="time">{{ .Date.Format "2006-01-02" }}</div>
+                                <div class="share-weibo">{{ partial "share.html" . }}</div>
+                            </div>
                         </div>
+                        {{ .Content }}
                     </div>
-                    {{ .Content }}
                 </div>
             </div>
             <div class="home">
