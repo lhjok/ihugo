@@ -245,22 +245,12 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 .controls-arrow:before {
     -webkit-transform: translateX(0.5em) translateY(1.55em) rotate(45deg);
     -ms-transform: translateX(0.5em) translateY(1.55em) rotate(45deg);
-    transform: translateX(0.5em) translateY(1.55em) rotate(45deg)
+    transform: translateX(0.5em) translateY(1.55em) rotate(45deg);
 }
 .controls-arrow:after {
     -webkit-transform: translateX(0.5em) translateY(1.55em) rotate(-45deg);
     -ms-transform: translateX(0.5em) translateY(1.55em) rotate(-45deg);
-    transform: translateX(0.5em) translateY(1.55em) rotate(-45deg)
-}
-.controls-arrow:active:before {
-    -webkit-transform: translateX(0.5em) translateY(1.55em) rotate(36deg);
-    -ms-transform: translateX(0.5em) translateY(1.55em) rotate(36deg);
-    transform: translateX(0.5em) translateY(1.55em) rotate(36deg)
-}
-.controls-arrow:active:after {
-    -webkit-transform: translateX(0.5em) translateY(1.55em) rotate(-36deg);
-    -ms-transform: translateX(0.5em) translateY(1.55em) rotate(-36deg);
-    transform: translateX(0.5em) translateY(1.55em) rotate(-36deg)
+    transform: translateX(0.5em) translateY(1.55em) rotate(-45deg);
 }
 .reveal .slides .Sidebar{
     display: none;
