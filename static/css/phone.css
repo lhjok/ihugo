@@ -24,7 +24,7 @@ sub{vertical-align:text-bottom;}
 .left,.right{display:inline;}
 .left{float:left;}
 .right{float:right;}
-a{cursor:pointer;text-decoration:none;outline:none;}
+a{cursor:pointer;text-decoration:none;outline:none;-webkit-tap-highlight-color: rgba(0,0,0,0);}
 a:hover{text-decoration:none;}
 p{margin:0;padding:0;}
 html,body{width:100%;height:100%;overflow:hidden;}
@@ -154,8 +154,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 }
 .reveal .slides {
     position: absolute;
-    top: 0; right: 0;
-    bottom: 0; left: 0;
+    top: 0; left: 0;
     margin: auto;
     overflow: visible;
     z-index: 1;
@@ -180,41 +179,39 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 }
 .swiper-button-next{
     position: absolute;
+    width: auto;
+    height: auto;
     color:#13daec;
     cursor: pointer;
     opacity: 0.8;
     bottom: 1.4em;
     right: 0.5em;
-    width: auto;
-    height: auto;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
     z-index: 10;
-    background: none;
 }
 .swiper-button-next .controls-arrow{
     margin-left: 8px;
     -webkit-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     transform: rotate(180deg);
-    background: none;
 }
 .swiper-button-prev{
     position: absolute;
+    width: auto;
+    height: auto;
     color:#13daec;
     opacity: 0.8;
     cursor: pointer;
     bottom: 1.4em;
     right: 4.5em;
-    width: auto;
-    height: auto;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
     z-index: 10;
-    background: none;
 }
 .swiper-button-prev .controls-arrow{
     margin-left: 8px;
     -webkit-transform: translateX(-10px);
     -ms-transform: translateX(-10px);
     transform: translateX(-10px);
-    background: none;
 }
 .swiper-button-next.swiper-button-disabled,
 .swiper-button-prev.swiper-button-disabled{
@@ -250,19 +247,16 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     -ms-transform: translateX(0.5em) translateY(1.55em) rotate(45deg);
     transform: translateX(0.5em) translateY(1.55em) rotate(45deg)
 }
-
 .controls-arrow:after {
     -webkit-transform: translateX(0.5em) translateY(1.55em) rotate(-45deg);
     -ms-transform: translateX(0.5em) translateY(1.55em) rotate(-45deg);
     transform: translateX(0.5em) translateY(1.55em) rotate(-45deg)
 }
-
 .controls-arrow:active:before {
     -webkit-transform: translateX(0.5em) translateY(1.55em) rotate(36deg);
     -ms-transform: translateX(0.5em) translateY(1.55em) rotate(36deg);
     transform: translateX(0.5em) translateY(1.55em) rotate(36deg)
 }
-
 .controls-arrow:active:after {
     -webkit-transform: translateX(0.5em) translateY(1.55em) rotate(-36deg);
     -ms-transform: translateX(0.5em) translateY(1.55em) rotate(-36deg);
@@ -674,13 +668,11 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     line-height: 2.9;
     margin-right: 5px;
 }
-@media screen and (min-width: 641px) {
-    .reveal .slides .content .post_mode .zk-item:hover .img-area .bottom-info {
-        opacity: 1
-    }
-    .reveal .slides .content .post_mode .zk-item:hover .info .platform-area {
-        display: none
-    }
+.reveal .slides .content .post_mode .zk-item:hover .img-area .bottom-info {
+    opacity: 1;
+}
+.reveal .slides .content .post_mode .zk-item:hover .info .platform-area {
+    display: none;
 }
 .reveal .slides .content .post_mode .zk-item .info .platform-area img {
     position: relative;
