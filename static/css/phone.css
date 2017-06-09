@@ -317,7 +317,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 }
 .reveal .slides .content .post_mode hr{
     clear: both;
-    background: url(../img/bx2.png) repeat-x;
+    background: url(../../img/bx2.png) repeat-x;
     height: 3px;
     width: 100%;
     border: 0;
@@ -408,7 +408,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 }
 .reveal .slides .content .post_mode .pro_title .tmall{
     float: left;
-    background: url(../img/tmall.png) 0 0 no-repeat;
+    background: url(../../img/tmall.png) 0 0 no-repeat;
     background-size: 16px 16px;
     width: 16px;
     height: 16px;
@@ -418,7 +418,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 }
 .reveal .slides .content .post_mode .bottom-info .tmall{
     float: left;
-    background: url(../img/tmall.png) 0 0 no-repeat;
+    background: url(../../img/tmall.png) 0 0 no-repeat;
     background-size: 16px 16px;
     width: 16px;
     height: 16px;
@@ -428,7 +428,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 }
 .reveal .slides .content .post_mode .pro_title .taobao{
     float: left;
-    background: url(../img/taobao.png) 0 0 no-repeat;
+    background: url(../../img/taobao.png) 0 0 no-repeat;
     background-size: 16px 16px;
     width: 16px;
     height: 16px;
@@ -438,7 +438,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 }
 .reveal .slides .content .post_mode .bottom-info .taobao{
     float: left;
-    background: url(../img/taobao.png) 0 0 no-repeat;
+    background: url(../../img/taobao.png) 0 0 no-repeat;
     background-size: 16px 16px;
     width: 16px;
     height: 16px;
@@ -627,7 +627,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     float: left;
     width: 40px;
     height: 16px;
-    background: url(../img/quanhoujia.png) center no-repeat;
+    background: url(../../img/quanhoujia.png) center no-repeat;
     background-size: 40px 16px;
     margin-top: 7px;
 }

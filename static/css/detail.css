@@ -463,7 +463,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     border-radius: 45px;
     -webkit-border-radius: 45px;
     -moz-border-radius: 45px;
-    background-image: url("../img/logo.png");
+    background-image: url("../../img/logo.png");
     animation:8.5s linear 0s normal none infinite rotate;
     -webkit-animation:8.5s linear 0s normal none infinite rotate;
 }
@@ -502,7 +502,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     display: block;
     width: 50px;
     height: 12px;
-    background-image: url("../img/2.gif");
+    background-image: url("../../img/2.gif");
 }
 .reveal .slides .share{
     position:relative;
@@ -536,7 +536,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     display: block;
     width: 16px;
     height: 16px;
-    background-image: url(../img/icon.png);
+    background-image: url(../../img/icon.png);
     background-repeat: no-repeat;
     margin-left: 6px;
 }
@@ -800,7 +800,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     display: inline-block;
     width: 16px;
     height: 16px;
-    background-image: url(../img/icon.png);
+    background-image: url(../../img/icon.png);
     background-repeat: no-repeat;
     margin-left: 6px;
 }
@@ -809,7 +809,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 }
 .reveal .slides .content .post_mode hr{
     clear: both;
-    background: url(../img/bx2.png) repeat-x;
+    background: url(../../img/bx2.png) repeat-x;
     height: 3px;
     width: 100%;
     border: 0;
@@ -899,7 +899,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 }
 .reveal .slides .content .business_mode hr{
     clear: both;
-    background: url(../img/bx2.png) repeat-x;
+    background: url(../../img/bx2.png) repeat-x;
     height: 3px;
     width: 80%;
     border: 0;
@@ -1014,7 +1014,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 }
 .reveal .slides .content .post_mode .pro_title .tmall{
     float: left;
-    background: url(../img/tmall.png) 0 0 no-repeat;
+    background: url(../../img/tmall.png) 0 0 no-repeat;
     background-size: 16px 16px;
     width: 16px;
     height: 16px;
@@ -1024,7 +1024,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 }
 .reveal .slides .content .post_mode .bottom-info .tmall{
     float: left;
-    background: url(../img/tmall.png) 0 0 no-repeat;
+    background: url(../../img/tmall.png) 0 0 no-repeat;
     background-size: 16px 16px;
     width: 16px;
     height: 16px;
@@ -1034,7 +1034,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 }
 .reveal .slides .content .post_mode .pro_title .taobao{
     float: left;
-    background: url(../img/taobao.png) 0 0 no-repeat;
+    background: url(../../img/taobao.png) 0 0 no-repeat;
     background-size: 16px 16px;
     width: 16px;
     height: 16px;
@@ -1044,7 +1044,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 }
 .reveal .slides .content .post_mode .bottom-info .taobao{
     float: left;
-    background: url(../img/taobao.png) 0 0 no-repeat;
+    background: url(../../img/taobao.png) 0 0 no-repeat;
     background-size: 16px 16px;
     width: 16px;
     height: 16px;
@@ -1122,7 +1122,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 }
 .reveal .slides .content .post_mode .zk-item .img-area .lq .lq-b {
     height: 23px;
-    background: url(../img/get_coupon_bottom.png) center no-repeat;
+    background: url(../../img/get_coupon_bottom.png) center no-repeat;
     background-size: 82px 23px
 }
 .reveal .slides .content .post_mode .zk-item .img-area .bottom-info {
@@ -1230,7 +1230,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     float: left;
     width: 47px;
     height: 19px;
-    background: url(../img/quanhoujia.png) center no-repeat;
+    background: url(../../img/quanhoujia.png) center no-repeat;
     background-size: 47px 19px;
     margin-top: 4px;
 }

@@ -9,7 +9,7 @@ metaDataFormat = "toml"
 defaultContentLanguage = "zh-CN"
 LanguageCode = "zh-CN"
 HasCJKLanguage = true
-baseURL = "/"
+baseURL = "www.iinrs.com"
 
 [taxonomies]
   series = "series"
