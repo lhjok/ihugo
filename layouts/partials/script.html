@@ -9,7 +9,7 @@
             $(".content").css({"width": wwi += "px", "height": whe += "px"});
         });
         $.getScript("../../js/swiper.jquery.min.js");
-        window.onload = function() {
+        $(document).ready(function(){
             var swiperH = new Swiper('.swiper-container-h', {
                 pagination: '.swiper-pagination-h',
                 paginationClickable: true,
@@ -27,7 +27,7 @@
                 mousewheelControl: false,
                 freeMode: true
             });
-        }
+        });
     }else if (wwi < 1400 || whe < 860) {
         wwi= 960, whe= 740;
         $(document).ready(function(){
