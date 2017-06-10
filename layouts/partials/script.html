@@ -1,5 +1,4 @@
 <script src="../../js/jquery-1.11.3.min.js"></script>
-<script src="../../js/fakeLoader.min.js"></script>
 <script type="text/javascript">
     var wwi= $(window).width(), whe= $(window).height();
     if (wwi < 860){
@@ -8,7 +7,7 @@
             $(".titles,.Sidebar,.tailtips-top,.tailtips-bottom,.home,.retop,.buy-area").remove();
             $(".content").css({"width": wwi += "px", "height": whe += "px"});
         });
-        $.getScript("../../js/swiper.jquery.min.js");
+        document.write('<script src="../../js/swiper.jquery.min.js"></' + 'script>');
         $(document).ready(function(){
             var swiperH = new Swiper('.swiper-container-h', {
                 pagination: '.swiper-pagination-h',
@@ -59,9 +58,9 @@
                 "rtl":false,"version":0,"collaborative":null,"deck_user_editor_limit":1,"data_updated_at":null,"font_typekit":null,"font_google":null
             }
         };
-        $.getScript("../../js/scrollbar.js");
-        $.getScript("../../js/application.js");
-        $.getScript("../../js/deck.js");
+        document.write('<script src="../../js/scrollbar.js"></' + 'script>');
+        document.write('<script src="../../js/application.js"></' + 'script>');
+        document.write('<script src="../../js/deck.js"></' + 'script>');
         $(document).ready(function(){
             $(".content").css("width", conwid += "px");
             $(".Sidebar,.content").css("height", heights += "px");

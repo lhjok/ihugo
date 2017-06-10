@@ -2,7 +2,28 @@
 <html class="sl-root decks fullscreen mz-applicationcache mz-history mz-localstorage mz-svg mz-opacity mz-rgba mz-backgroundsize mz-cssanimations mz-csstransforms mz-csstransforms3d mz-csstransitions mz-flexbox mz-flexboxlegacy mz-fullscreen loaded ua-linux ua-chrome has-visible-scrollbars reveal-is-ready fonts-are-ready">
     <head>{{ partial "head.html" . }}</head>
     <body class="reveal-viewport theme-font-league theme-color-grey-blue" onresize="location.reload()">
-        <div id="fakeLoader"></div>
+        <div id="fakeLoader">
+            <div class="spinner2">
+                <div class="spinner-container container1">
+                    <div class="circle1"></div>
+                    <div class="circle2"></div>
+                    <div class="circle3"></div>
+                    <div class="circle4"></div>
+                </div>
+                <div class="spinner-container container2">
+                    <div class="circle1"></div>
+                    <div class="circle2"></div>
+                    <div class="circle3"></div>
+                    <div class="circle4"></div>
+                </div>
+                <div class="spinner-container container3">
+                    <div class="circle1"></div>
+                    <div class="circle2"></div>
+                    <div class="circle3"></div>
+                    <div class="circle4"></div>
+                </div>
+            </div>
+        </div>
         {{ partial "script.html" . }}
         <div class="reveal swiper-container swiper-container-h">
             <div class="slides swiper-wrapper">
@@ -12,15 +33,16 @@
         </div>
         <script type="text/javascript">
             if (wwi < 860) {
-                document.writeln("<div class=\'swiper-pagination\'><div class=\'controls-arrow\'></div></div>");
-                document.writeln("<div class=\'swiper-button-next\'><div class=\'controls-arrow\'></div></div>");
-                document.writeln("<div class=\'swiper-button-prev\'><div class=\'controls-arrow\'></div></div>");
+                document.write("<div class=\'swiper-pagination\'><div class=\'controls-arrow\'></div></div>");
+                document.write("<div class=\'swiper-button-next\'><div class=\'controls-arrow\'></div></div>");
+                document.write("<div class=\'swiper-button-prev\'><div class=\'controls-arrow\'></div></div>");
             }
-            $("#fakeLoader").fakeLoader({
-                timeToHide:800,
-                zIndex:999,
-                spinner:"spinner2",
-                bgColor:"#2e2e2e"
+            $(document).ready(function(){
+                setTimeout(function() {
+                    $('#fakeLoader').fadeOut("slow", function(){
+                        $(this).remove();
+                    });
+                }, 800);
             });
         </script>
     </body>
