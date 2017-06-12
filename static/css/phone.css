@@ -406,46 +406,6 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     padding: 0;
     margin: 0;
 }
-.reveal .slides .content .post_mode .pro_title .tmall{
-    float: left;
-    background: url(../../img/tmall.png) 0 0 no-repeat;
-    background-size: 16px 16px;
-    width: 16px;
-    height: 16px;
-    display: block;
-    margin-top: 3px;
-    margin-right: 5px;
-}
-.reveal .slides .content .post_mode .bottom-info .tmall{
-    float: left;
-    background: url(../../img/tmall.png) 0 0 no-repeat;
-    background-size: 16px 16px;
-    width: 16px;
-    height: 16px;
-    display: block;
-    margin-top: 1px;
-    margin-right: 6px;
-}
-.reveal .slides .content .post_mode .pro_title .taobao{
-    float: left;
-    background: url(../../img/taobao.png) 0 0 no-repeat;
-    background-size: 16px 16px;
-    width: 16px;
-    height: 16px;
-    display: block;
-    margin-top: 5px;
-    margin-right: 4px;
-}
-.reveal .slides .content .post_mode .bottom-info .taobao{
-    float: left;
-    background: url(../../img/taobao.png) 0 0 no-repeat;
-    background-size: 16px 16px;
-    width: 16px;
-    height: 16px;
-    display: block;
-    margin-top: 1px;
-    margin-right: 6px;
-}
 .reveal .slides .content ul.pro_detail{
     position: relative;
     display: block;
@@ -519,30 +479,6 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 }
 .reveal .slides .content .post_mode .zk-item .img-area .lq .lq-b {
     display: none;
-}
-.reveal .slides .content .post_mode .zk-item .img-area .bottom-info {
-    opacity: 0;
-    position: absolute;
-    width: 100%;
-    height: 28px;
-    bottom: 0;
-    background-color: rgba(0,0,0,.6);
-    z-index: 9;
-    -webkit-transition: opacity .3s ease;
-    -moz-transition: opacity .3s ease;
-    -ms-transition: opacity .3s ease;
-    transition: opacity .3s ease
-}
-.reveal .slides .content .post_mode .zk-item .img-area .bottom-info .time-count {
-    font-size: 0.8em;
-    color: #fff;
-    line-height: 28px;
-    padding-left: 10px;
-    text-align: center
-}
-.reveal .slides .content .post_mode .zk-item .img-area .bottom-info .time-count em {
-    font-style: normal;
-    padding: 0 2px;
 }
 .reveal .slides .content .post_mode .zk-item .img-area a.alink {
     position:relative;
