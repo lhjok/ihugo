@@ -661,9 +661,6 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 .reveal .slides .content .post_mode .zk-item:hover .img-area .bottom-info {
     opacity: 1;
 }
-.reveal .slides .content .post_mode .zk-item:hover .info .platform-area {
-    display: none;
-}
 .reveal .slides .content .post_mode .zk-item .info .platform-area img {
     position: relative;
     float: right;
