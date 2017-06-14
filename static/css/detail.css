@@ -757,17 +757,17 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 .reveal .slides .content .post_mode .titles {
     position: relative;
     width: 100%;
-    height: 43px;
-    margin-top: 12px;
-    margin-bottom: 3px;
+    height: 30px;
+    margin-top: 13px;
+    margin-bottom: 13px;
 }
 .reveal .slides .content .post_mode .titles .post_title {
     position: relative;
     float: left;
     color: #13daec;
-    width: 440px;
-    height: 43px;
-    line-height: 33px;
+    width: 590px;
+    height: 30px;
+    line-height: 28px;
     text-align: left;
     font-size: 20px;
     font-family: "Microsoft YaHei",Tahoma,Monaco,"DejaVu Sans Mono",Arial;
@@ -780,7 +780,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     position: relative;
     float: right;
     width: 150px;
-    height: 43px;
+    height: 30px;
     overflow: hidden;
 }
 .reveal .slides .content .post_mode .titles .time-share .time {
@@ -792,7 +792,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     font-size: 15px;
     font-family: "Microsoft YaHei",Tahoma,Monaco,"DejaVu Sans Mono",Arial;
     text-align: right;
-    margin-top: 12px;
+    margin-top: 10px;
 }
 .reveal .slides .content .post_mode .titles .time-share .share-weibo {
     position: relative;
@@ -801,7 +801,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     height: 16px;
     vertical-align: middle;
     display: inline;
-    margin-top: 13px;
+    margin-top: 10px;
 }
 .reveal .slides .content .post_mode .titles .time-share .share-weibo a {
     position: relative;
@@ -908,7 +908,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 .reveal .slides .content ul.pro_detail{
     position: relative;
     display: block;
-    width: 106%;
+    width: 103%;
     height: auto;
     padding: 0;
     margin: 0;
@@ -926,7 +926,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 }
 .reveal .slides .content .post_mode .zk-item {
     width: 225px;
-    height: 315px;
+    height: 317px;
 }
 .reveal .slides .content .post_mode .zk-item .img-area {
     position: relative;
@@ -992,6 +992,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     max-height: 400px;
 }
 .reveal .slides .content .post_mode .zk-item .title-area {
+    height: 26px;
     font-size: 12px;
     padding: 8px 5px 0;
     overflow: hidden;
@@ -1009,9 +1010,11 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     border-radius: 1px
 }
 .reveal .slides .content .post_mode .zk-item .raw-price-area {
+    height: 25px;
     font-size: 13px;
     line-height: 17px;
-    padding: 8px 5px 0;
+    padding: 9px 5px 0;
+    overflow: hidden;
 }
 .reveal .slides .content .post_mode .zk-item .raw-price-area .sold {
     font-size: 13px;
@@ -1019,7 +1022,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     float: right
 }
 .reveal .slides .content .post_mode .zk-item .info {
-    height: 39px;
+    height: 40px;
     padding: 9px 0 0;
     overflow: hidden;
 }
@@ -1036,7 +1039,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     float: left;
     height: 27px;
     line-height: 28px;
-    font-size: 19px;
+    font-size: 16px;
     font-weight: 700;
     margin: 0;
 }
@@ -1057,21 +1060,21 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 .reveal .slides .content .post_mode .zk-item .info .price-area i {
     position: relative;
     float: left;
-    width: 47px;
+    width: 46px;
     height: 19px;
     background: url(../../img/quanhoujia.png) center no-repeat;
-    background-size: 47px 19px;
-    margin-top: 4px;
+    background-size: 46px 19px;
+    margin-top: 3px;
 }
 .reveal .slides .content .post_mode .zk-item .info .price-area em.number-font {
     height: 27px;
     line-height: 30px;
-    font-size: 28px;
+    font-size: 24px;
     padding-left: 2px
 }
 .reveal .slides .content .post_mode .zk-item .info .price-area em.decimal {
     height: 27px;
-    line-height: 33px;
+    line-height: 31px;
     font-size: 20px
 }
 .reveal .slides .content .post_mode .zk-item .info .platform-area {
