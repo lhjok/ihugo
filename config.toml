@@ -7,6 +7,7 @@ canonifyURLs = true
 metaDataFormat = "toml"
 defaultContentLanguage = "zh-CN"
 LanguageCode = "zh-CN"
+watch = true
 HasCJKLanguage = true
 baseURL = "www.iinrs.com"
 

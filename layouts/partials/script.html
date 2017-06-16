@@ -8,15 +8,37 @@
         });
         document.write('<script src="../../js/swiper.jquery.min.js"></' + 'script>');
         $(document).ready(function(){
-            var swiperH = new Swiper('.swiper-container-h', {
+            var toggleMenu = function(){
+                if (swiper.previousIndex == 0)
+                    swiper.slidePrev()
+            },
+            menuButton = document.getElementsByClassName('menu-button')[0],
+            swiperH = new Swiper('.swiper-container-h', {
                 pagination: '.swiper-pagination-h',
                 paginationClickable: true,
                 nextButton: '.swiper-button-next',
                 prevButton: '.swiper-button-prev',
                 pagination: '.swiper-pagination',
                 paginationType: 'progress',
-                spaceBetween: 15
-            });
+                slidesPerView: 'auto',
+                spaceBetween: 8,
+                initialSlide: 1,
+                resistanceRatio: 0.7,
+                onSlideChangeStart: function(slider) {
+                    if (slider.activeIndex == 0) {
+                        menuButton.classList.add('cross')
+                        menuButton.removeEventListener('click', toggleMenu, false)
+                    } else
+                        menuButton.classList.remove('cross')
+                },
+                onSlideChangeEnd: function(slider) {
+                    if (slider.activeIndex == 0)
+                        menuButton.removeEventListener('click', toggleMenu, false)
+                    else
+                        menuButton.addEventListener('click', toggleMenu, false)
+                },
+                slideToClickedSlide: true
+            })
             var swiperV = new Swiper('.swiper-container-v', {
                 pagination: '.swiper-pagination-v',
                 paginationClickable: true,
@@ -38,6 +60,7 @@
         wwi= 1129, whe= 800;
     }
     if (wwi > 860){
+        $(".menu,.menu-button").remove();
         var widths= wwi, heights= whe, conwid= widths-285-25, taiwid= conwid-44;
         var SLConfig = {
             "deck":{

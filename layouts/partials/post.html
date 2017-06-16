@@ -1,7 +1,12 @@
 {{ range .Data.Pages.GroupByPublishDate "2006-01" "asc" }}
-    {{ range first 10 .Pages }}
+    {{ range $i, $v := first 10 .Pages }}
         {{ if isset .Params "index" }}
         <section class="swiper-slide">
+            {{ if eq $i 0 }}
+            <div class="menu-button">
+                <div class="bar"></div>
+            </div>
+            {{ end }}
             <div class="tailtips-top"></div>
             {{ partial "sidebar.html" . }}
             <div class="content mCustomScrollbar swiper-container swiper-container-v" data-mcs-theme="minimal">

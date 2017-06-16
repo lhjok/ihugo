@@ -26,6 +26,33 @@
         </div>
         <div class="reveal swiper-container swiper-container-h">
             <div class="slides swiper-wrapper">
+                <div class="swiper-slide menu">
+                    <div class="swiper-container swiper-container-v menu-content">
+                        <div class="swiper-wrapper menu-wrapper">
+                            <div class="swiper-slide menu-slide">
+                                <div class="menu-logo">
+                                    <a href="{{ $.Site.BaseURL }}"></a>
+                                </div>
+                                <div class="menu-title"><a href="{{ $.Site.BaseURL }}">{{ .Site.Params.SiteLogo }}</a></div>
+                                <div class="menu-tagline">专业人工精选最优质、最实惠的商品，相信专业，就在如实。</div>
+                                <ul class="nav-list">
+                                    <li class="nav-item">
+                                        <a href="{{ $.Site.BaseURL }}"><span class="separator">//</span>首页(Hot)</a>
+                                    </li>
+                                    {{ if isset .Site.Taxonomies "series" }}
+                                        {{ if not (eq (len .Site.Taxonomies.series) 0) }}
+                                            {{ range $name, $items := .Site.Taxonomies.series }}
+                                            <li class="nav-item">
+                                                <a href="{{ $.Site.BaseURL }}series/{{ $name | urlize | lower }}"><span class="separator">//</span>{{ $name }}({{ len $items }})</a>
+                                            </li>
+                                            {{ end }}
+                                        {{ end }}
+                                    {{ end }}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 {{ partial "series.html" . }}
             </div>
             <script src="../../js/siteinfo.js"></script>

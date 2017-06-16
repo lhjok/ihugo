@@ -165,6 +165,10 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     -webkit-perspective-origin: 50% 40%;
     perspective-origin: 50% 40%;
 }
+.reveal .slides .menu,
+.reveal .slides .menu-button{
+    display: none;
+}
 .reveal .slides .Sidebar{
     position:relative;
     float: left;
