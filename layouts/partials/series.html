@@ -1,5 +1,5 @@
 {{ range .Data.Pages.GroupByPublishDate "2006-01" "asc" }}
-    {{ range $i, $v := first 10 .Pages }}
+    {{ range $i, $v := first 20 .Pages }}
     <section class="swiper-slide">
         {{ if eq $i 0 }}
         <div class="menu-button">

@@ -6,6 +6,9 @@
             $(".content").css({"width": wwi += "px", "height": whe += "px"});
         });
         document.write('<script src="../../js/swiper.jquery.min.js"></' + 'script>');
+        document.write("<div class=\'swiper-pagination\'><div class=\'controls-arrow\'></div></div>");
+        document.write("<div class=\'swiper-button-next\'><div class=\'controls-arrow\'></div></div>");
+        document.write("<div class=\'swiper-button-prev\'><div class=\'controls-arrow\'></div></div>");
         $(document).ready(function(){
             var toggleMenu = function(){
                 if (swiper.previousIndex == 0)
@@ -20,10 +23,10 @@
                 pagination: '.swiper-pagination',
                 paginationType: 'progress',
                 slidesPerView: 'auto',
-                watchSlidesProgress : true,
-                watchSlidesVisibility : true,
-                lazyLoading : true,
-                lazyLoadingInPrevNext : true,
+                preloadImages: false,
+                watchSlidesProgress: true,
+                watchSlidesVisibility: true,
+                lazyLoading: true,
                 spaceBetween: 8,
                 initialSlide: 1,
                 resistanceRatio: 0.7,
@@ -44,13 +47,8 @@
             })
             var swiperV = new Swiper('.swiper-container-v', {
                 pagination: '.swiper-pagination-v',
-                paginationClickable: true,
                 direction: 'vertical',
                 slidesPerView: 'auto',
-                watchSlidesProgress : true,
-                watchSlidesVisibility : true,
-                lazyLoading : true,
-                lazyLoadingInPrevNext : true,
                 mousewheelControl: false,
                 freeMode: true
             });
@@ -83,7 +81,7 @@
                         "id":8888,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true
                     }
                 },"background_transition":"fade","transition":"linear","theme_id":null,"theme_font":"league","theme_color":"grey-blue","auto_slide_interval":0,
-                "comments_enabled":true,"forking_enabled":true,"rolling_links":false,"center":false,"should_loop":false,"share_notes":null,"slide_number":null,
+                "comments_enabled":false,"forking_enabled":true,"rolling_links":false,"center":false,"should_loop":false,"share_notes":null,"slide_number":null,
                 "rtl":false,"version":0,"collaborative":null,"deck_user_editor_limit":1,"data_updated_at":null,"font_typekit":null,"font_google":null
             }
         };
@@ -94,6 +92,23 @@
             $(".content").css("width", conwid += "px");
             $(".Sidebar,.content").css("height", heights += "px");
             $(".tailtips-top,.tailtips-bottom").css("width", taiwid += "px");
+        });
+        $(document).ready(function(){
+            $(".clicktop").click(function(){
+                $(".mCSB_container,.mCSB_dragger").animate({top:0},"slow");
+            });
+        });
+        $(document).ready(function(){
+            setTimeout(function() {
+                $('.siteinfo').fadeOut(500, function(){
+                    $(this).css("display","block");
+                });
+            }, 1000);
+        });
+        $(".closes").click(function(){
+            $(".siteinfo").fadeOut(500, function(){
+                $(this).remove();
+            });
         });
     }
 </script>
