@@ -40,6 +40,9 @@ body{
     font-family: "Microsoft YaHei",Tahoma,Monaco,"DejaVu Sans Mono",Arial;
     background-color: #2e2e2e;
 }
+#fakeLoader{
+    background-color:#2e2e2e;
+}
 .reveal{
     position:relative;
     color:#eeeeee;

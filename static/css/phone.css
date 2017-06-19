@@ -38,15 +38,18 @@ body{
     position:relative;
     font-size: 0.7em;
     font-family: "Microsoft YaHei",Tahoma,Monaco,"DejaVu Sans Mono",Arial;
-    background-color: #2e2e2e;
+    background-color: #e2e2e2;
+}
+#fakeLoader{
+    background-color:#13daec;
 }
 .menu {
     opacity: 0.9;
     min-width: 100px;
     width: 50%;
     max-width: 320px;
-    background-color: #444;
-    color: #999;
+    background-color: #13daec;
+    color: #fff;
     text-align: center;
     font-size: 18px;
     display: -webkit-box;
@@ -71,7 +74,7 @@ body{
     cursor: pointer;
     -webkit-transition: .3s;
     transition: .3s;
-    background-color: #444;
+    background-color: #13daec;
     border-radius: 0 0 6px 0;
     -webkit-border-radius: 0 0 6px 0;
     -moz-border-radius: 0 0 6px 0;
@@ -93,16 +96,16 @@ body{
     content:'';
     height:5px;
     width:30px;
-    background:#999;
+    background:#fff;
     border-radius:4px;
     -webkit-border-radius:4px;
     -moz-border-radius:4px;
     display:block;
     position:absolute;
     top:2px; left:0;
-    box-shadow:0 11px #999, 0 22px #999;
-    -webkit-box-shadow:0 11px #999, 0 22px #999;
-    -moz-box-shadow:0 11px #999, 0 22px #999;
+    box-shadow:0 11px #fff, 0 22px #fff;
+    -webkit-box-shadow:0 11px #fff, 0 22px #fff;
+    -moz-box-shadow:0 11px #fff, 0 22px #fff;
 }
 .cross .bar:before,
 .cross .bar:after{
@@ -110,7 +113,7 @@ body{
     height:5px;
     width:36px;
     display:block;
-    background:#999;
+    background:#fff;
     border-radius:4px;
     -webkit-border-radius:4px;
     -moz-border-radius:4px;
@@ -148,7 +151,7 @@ body{
     width:100%;
     height:59px;
     margin-top: 5px;
-    margin-bottom: 6px;
+    margin-bottom: 5px;
 }
 .menu-content .menu-wrapper .menu-slide .menu-logo a{
     position:relative;
@@ -169,25 +172,28 @@ body{
     position:relative;
     font-size: 2.3em;
     width:100%;
-    height: 37px;
-    color: #13daec;
+    height: 36px;
+    color: #fff;
     font-family: "Microsoft YaHei",Tahoma,Monaco,"DejaVu Sans Mono",Arial;
     font-weight: bold;
-    line-height: 37px;
+    line-height: 36px;
     text-align: left;
     padding-left: 10px;
+}
+.menu-content .menu-wrapper .menu-slide .menu-title a{
+    color: #fff;
 }
 .menu-content .menu-wrapper .menu-slide .menu-tagline{
     position: relative;
     width: 87%;
     height: auto;
-    color: #8b8b8b;
+    color: #fff;
     text-align: left;
-    line-height: 1.5;
+    line-height: 1.4;
     font-weight: 200;
     font-size: 1.1em;
     padding-left: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 .menu-content .menu-wrapper .menu-slide ul.nav-list{
     position: relative;
@@ -203,36 +209,37 @@ body{
     float: left;
     text-align: left;
     width: 84%;
-    height: 35px;
-    line-height: 33px;
-    font-size: 1.25em;
+    height: 32px;
+    line-height: 30px;
+    font-size: 1.3em;
     margin-left: 10px;
     margin-bottom: 8px;
 }
 .menu-content .menu-wrapper .menu-slide ul.nav-list li.nav-item a{
     position:relative;
+    color: #fff;
     text-align: left;
     width: 100%;
     height: 100%;
     display: block;
     padding-left: 10px;
-    background-color:#555;
+    background-color:#4bebfa;
     border-radius: 2px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
 }
 .menu-content .menu-wrapper .menu-slide ul.nav-list li.nav-item a:active{
-    background-color:#666;
+    background-color:#6ff5ff;
 }
 .menu-content .menu-wrapper .menu-slide ul.nav-list .separator{
     font-weight: 100;
-    color: #E54028;
+    color: #fff;
     letter-spacing: -3px;
     margin-right: 6px;
 }
 .reveal{
     position:relative;
-    color:#eeeeee;
+    color:#444;
     font-family: Verdana,"Microsoft YaHei",Tahoma,Monaco,"DejaVu Sans Mono",Arial;
     font-size: 0.65em;
     font-weight:normal;
@@ -361,7 +368,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     height: 3px;
     left: 0;
     bottom: 0;
-    background: rgba(0,0,0,0.2);
+    background: rgba(0,0,0,0.06);
     z-index: 10;
 }
 .swiper-pagination-progress .swiper-pagination-progressbar{
@@ -373,7 +380,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     height: auto;
     color:#13daec;
     cursor: pointer;
-    opacity: 0.8;
+    opacity: 0.9;
     bottom: 1.4em;
     right: 0.5em;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
@@ -390,7 +397,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     width: auto;
     height: auto;
     color:#13daec;
-    opacity: 0.8;
+    opacity: 0.9;
     cursor: pointer;
     bottom: 1.2em;
     right: 4.5em;
@@ -450,7 +457,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     float: left;
     overflow-x: hidden;
     overflow-y: auto;
-    color: #ccc;
+    color: #444;
     padding: 0;
 }
 .reveal .slides .tailtips-top{
@@ -547,8 +554,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 .reveal .slides .content .post_mode code{
     font-family: "Source Code Pro", Monaco, Menlo, Consolas, "DejaVu Sans Mono", monospace;
     font-size: 0.8em;
-    background-color: #333;
-    border: 1px solid #2a2a2a;
+    background-color: #444;
     border-radius: 3px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -558,8 +564,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 .reveal .slides .content .post_mode pre{
     font-family: "Source Code Pro", Monaco, Menlo, Consolas, "DejaVu Sans Mono", monospace;
     font-size: 0.7em;
-    background-color: #444;
-    border: 1px solid #2a2a2a;
+    background-color: #f2f2f2;
     border-left-width: 6px;
     border-radius: 0 3px 3px 0;
     -webkit-border-radius: 0 3px 3px 0;
@@ -581,12 +586,11 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     width: 100%;
     height: 100%;
     max-width:565px;
-    border: 1px solid #222;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     padding: 5px;
-    background-color: #444;
+    background-color: #f2f2f2;
 }
 .reveal .slides .content .post_mode img{
     -webkit-border-radius: 0;
@@ -610,7 +614,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     width: 48%;
     float: left;
     display: block;
-    background-color: #444;
+    background-color: #f2f2f2;
     margin-right: 2%;
     margin-bottom: 2%;
     padding: 0;
@@ -634,9 +638,10 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     z-index: 1;
 }
 .reveal .slides .content .post_mode .zk-item .img-area .lq .lq-t {
-    height: 37px;
+    opacity: 0.9;
+    height: 35px;
     font-weight: normal;
-    background-color: #E54028;
+    background-color: #ff472b;
     border-radius: 0 0 0 6px;
     -webkit-border-radius: 0 0 0 6px;
     -moz-border-radius: 0 0 0 6px;
@@ -647,10 +652,11 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     display: block;
     font-size: 1.1em;
     font-weight: 700;
-    line-height: 1.65em;
+    line-height: 1.5em;
     height: auto;
     color: #fff;
     text-align: center;
+    margin-top: 1px;
 }
 .reveal .slides .content .post_mode .zk-item .img-area .lq .lq-t .lq-t-d2 {
     display: block;
@@ -659,7 +665,6 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     line-height: 1.1em;
     height: auto;
     color: #fff;
-    padding-top: 0;
     text-align: center;
 }
 .reveal .slides .content .post_mode .zk-item .img-area .lq .lq-t .lq-t-d2 em {
@@ -693,16 +698,18 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     overflow: hidden;
 }
 .reveal .slides .content .post_mode .zk-item .title-area .post-free {
-    display: inline-block;
+    float: left;
     width: auto;
-    height: auto;
-    font-size: 0.9em;
+    height: 15px;
+    line-height: 1.5em;
+    font-size: 0.8em;
     color: #fff;
     text-align: center;
-    background-color: #E54028;
+    background-color: #ff472b;
     border-radius: 2px;
     padding: 0 2px 0 1px;
     margin-right: 3px;
+    overflow: hidden;
 }
 .reveal .slides .content .post_mode .zk-item .raw-price-area {
     height: 22px;

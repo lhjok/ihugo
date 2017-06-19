@@ -1,5 +1,4 @@
 <script type="text/javascript">
-    var wwi= $(window).width(), whe= $(window).height();
     if (wwi < 860){
         whe= whe*0.995;
         $(document).ready(function(){
@@ -21,6 +20,10 @@
                 pagination: '.swiper-pagination',
                 paginationType: 'progress',
                 slidesPerView: 'auto',
+                watchSlidesProgress : true,
+                watchSlidesVisibility : true,
+                lazyLoading : true,
+                lazyLoadingInPrevNext : true,
                 spaceBetween: 8,
                 initialSlide: 1,
                 resistanceRatio: 0.7,
@@ -44,6 +47,10 @@
                 paginationClickable: true,
                 direction: 'vertical',
                 slidesPerView: 'auto',
+                watchSlidesProgress : true,
+                watchSlidesVisibility : true,
+                lazyLoading : true,
+                lazyLoadingInPrevNext : true,
                 mousewheelControl: false,
                 freeMode: true
             });
