@@ -175,7 +175,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 .reveal .slides .Sidebar{
     position:relative;
     float: left;
-    color: #fff;
+    color: #eee;
     width: 285px;
     height: auto;
 }
@@ -196,7 +196,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     position:relative;
     width:285px;
     height: 68px;
-    color: #8b8b8b;
+    color: #777;
     text-align:right;
     line-height: 22px;
     font-weight: 200;
@@ -256,7 +256,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 }
 .reveal .slides .Sidebar .qrcode .qrcodewx{
     position: relative;
-    color: #E54028;
+    color: #858585;
     float: left;
     width: 123px;
     height: 21px;
@@ -268,7 +268,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     position: relative;
     display: none;
     float: left;
-    color: #13daec;
+    color: #ababab;
     width: 250px;
     height: auto;
     text-align: left;
@@ -312,21 +312,19 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     margin: 0;
 }
 .reveal .slides .Sidebar .siteinfo .icon{
-    position:relative;
+    position: absolute;
+    top: 15px;
+    left: 12px;
     height:22px;
     width:22px;
     overflow: hidden;
-    margin: 15px 0 0 12px;
-}
-.reveal .slides .Sidebar .siteinfo .commentinfo{
-	position:relative;
 }
 .reveal .slides .Sidebar .siteinfo .commentinfo:before{
 	content:'';
     height:8px;
     width:6px;
     display:block;
-    background: #13daec;
+    background: #FF2B22;
     position:absolute;
     top:6px; left:0px;
 }
@@ -337,7 +335,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     display:block;
     border:5px transparent solid;
     border-left-width:0;
-    border-right-color:#13daec;
+    border-right-color:#FF2B22;
     position:absolute;
     top:1px; left:6px;
 }
@@ -351,7 +349,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     width:20px;
     display:block;
     border:2px solid transparent;
-    border-right:2px solid #13daec;
+    border-right:2px solid #FF2B22;
     border-radius:20px;
     -webkit-border-radius:20px;
     -moz-border-radius:20px;
@@ -364,7 +362,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     width:15px;
     display:block;
     border:2px solid transparent;
-    border-right:2px solid #13daec;
+    border-right:2px solid #FF2B22;
     border-radius:10px;
     -webkit-border-radius:10px;
     -moz-border-radius:10px;
@@ -391,7 +389,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 	display:block;
 	border: 11px transparent solid;
 	border-bottom-width:0;
-	border-top-color:#444;
+	border-top-color:#424242;
 }
 .reveal .slides .Sidebar .siteinfo .closes {
 	position: absolute;
@@ -416,11 +414,11 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 	height: 60%;
 	top: 50%;
 	left: 50%;
-	background: #222;
+	background: #242424;
 }
 .reveal .slides .Sidebar .siteinfo .closes:hover::before,
 .reveal .slides .Sidebar .siteinfo .closes:hover::after {
-	background: #fff;
+	background: #eee;
 }
 .reveal .slides .Sidebar .siteinfo .closes::before {
 	-webkit-transform: translate(-50%,-50%) rotate(45deg);
@@ -432,11 +430,11 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 }
 .reveal .slides .Sidebar .siteinfo .closes::before,
 .reveal .slides .Sidebar .siteinfo .closes::after {
-	background: #222;
+	background: #242424;
 }
 .reveal .slides .Sidebar .siteinfo .closes:hover::before,
 .reveal .slides .Sidebar .siteinfo .closes:hover::after {
-	background: #fff;
+	background: #eee;
 }
 @-webkit-keyframes rotate{
     from{-webkit-transform:rotate(0deg)}
@@ -466,7 +464,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     top:0px; left:150px;
     width:75px;
     height:75px;
-    border:2px solid #fff;
+    border:2px solid #eee;
     border-radius: 45px;
     -webkit-border-radius: 45px;
     -moz-border-radius: 45px;
@@ -489,7 +487,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     float: left;
     width: 229px;
     height: 25px;
-    color: #8b8b8b;
+    color: #777;
     text-align: right;
     font-size: 13px;
     line-height: 24px;
@@ -498,7 +496,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 .reveal .slides .foo .copy a{
     position:relative;
     height: 25px;
-    color: #8b8b8b;
+    color: #777;
     text-align: right;
     font-size: 12px;
     line-height: 25px;
@@ -532,7 +530,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     float: right;
     width: auto;
     height: 18px;
-    color: #E54028;
+    color: #777;
     font-size: 13px;
     line-height: 18px;
     overflow: hidden;
@@ -579,7 +577,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     top: 1px;
     width:606px;
     height:25px;
-    border-bottom: 1px solid #222;
+    border-bottom: 1px solid #262626;
     z-index: 99;
 }
 .reveal .slides .tailtips-bottom{
@@ -593,7 +591,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     line-height: 22px;
     text-align: center;
     text-shadow: 0 1px 0 #666;
-    border-top: 1px solid #222;
+    border-top: 1px solid #262626;
     z-index: 99;
 }
 .reveal .slides .home{
@@ -610,7 +608,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     width: 38px;
     height: 38px;
     border: 1px solid #222;
-    background-color: #444;
+    background-color: #424242;
     border-radius: 4px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -640,7 +638,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     position:absolute;
     top:6px; left:2px;
     border:7px solid transparent;
-    border-bottom-color:#13daec;
+    border-bottom-color:#FF2B22;
     border-top:0;
     transform:scale(1,0.8);
     -webkit-transform:scale(1,0.8);
@@ -655,7 +653,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     display:block;
     position:absolute;
     top:12px; left:2px;
-    border:4px #13daec solid;
+    border:4px #FF2B22 solid;
     border-top-width:2px;
     border-bottom:0;
 }
@@ -671,14 +669,14 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     display:block;
     position:absolute;
     top:3px; left:14px;
-    background:#13daec;
+    background:#FF2B22;
 }
 .reveal .slides .home .home-icon .home2:after{
     content:'';
     height:12px;
     width:11px;
-    border-top:2px #13daec solid;
-    border-right:2px #13daec solid;
+    border-top:2px #FF2B22 solid;
+    border-right:2px #FF2B22 solid;
     position:absolute;
     top:3px; left:3px;
     transform:scale(1,0.8) rotate(-45deg);
@@ -701,7 +699,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     width: 38px;
     height: 38px;
     border: 1px solid #222;
-    background-color: #444;
+    background-color: #424242;
     border-radius: 4px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -730,7 +728,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     height:9px;
     width:9px;
     display:block;
-    border:2px solid #13daec;
+    border:2px solid #FF2B22;
     border-left-width:0;
     border-bottom-width:0;
     transform:rotate(-45deg);
@@ -746,7 +744,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     height:12px;
     width:3px;
     display:block;
-    background:#13daec;
+    background:#FF2B22;
     position:absolute;
     top:1px; left:5px;
 }
@@ -765,13 +763,13 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     position: relative;
     width: 100%;
     height: 30px;
-    margin-top: 13px;
+    margin-top: 18px;
     margin-bottom: 13px;
 }
 .reveal .slides .content .post_mode .titles .post_title {
     position: relative;
     float: left;
-    color: #13daec;
+    color: #858585;
     width: 590px;
     height: 30px;
     line-height: 28px;
@@ -792,6 +790,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 }
 .reveal .slides .content .post_mode .titles .time-share .time {
     position: relative;
+    color: #858585;
     float: left;
     width: 103px;
     height: 18px;
@@ -874,7 +873,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 .reveal .slides .content .post_mode pre{
     font-family: "Source Code Pro", Monaco, Menlo, Consolas, "DejaVu Sans Mono", monospace;
     font-size: 14px;
-    background-color: #444;
+    background-color: #424242;
     border: 1px solid #2a2a2a;
     border-left-width: 6px;
     border-radius: 0 3px 3px 0;
@@ -902,7 +901,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     padding: 5px;
-    background-color: #444;
+    background-color: #424242;
 }
 .reveal .slides .content .post_mode img{
     -webkit-border-radius: 0;
@@ -925,15 +924,15 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     position: relative;
     float: left;
     display: block;
-    border: 1px solid #222;
-    background-color: #444;
+    border: 1px solid #262626;
+    background-color: #424242;
     margin-right: 15px;
     margin-bottom: 16px;
     padding: 7px 8px;
 }
 .reveal .slides .content .post_mode .zk-item {
     width: 225px;
-    height: 317px;
+    height: 312px;
 }
 .reveal .slides .content .post_mode .zk-item .img-area {
     position: relative;
@@ -961,7 +960,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     font-weight: 700;
     line-height: 20px;
     height: 25px;
-    color: #fff;
+    color: #eee;
     padding-top: 4px;
     text-align: center;
 }
@@ -971,7 +970,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     font-weight: 700;
     line-height: 18px;
     height: 25px;
-    color: #fff;
+    color: #eee;
     padding-top: 0;
     text-align: center;
 }
@@ -999,9 +998,10 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     max-height: 400px;
 }
 .reveal .slides .content .post_mode .zk-item .title-area {
+    color: #ababab;
     height: 26px;
     font-size: 12px;
-    padding: 8px 5px 0;
+    padding: 6px 5px 0;
     overflow: hidden;
 }
 .reveal .slides .content .post_mode .zk-item .title-area .post-free {
@@ -1010,17 +1010,18 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     padding: 0 2px;
     font-size: 12px;
     line-height: 14px;
-    color: #fff;
+    color: #eee;
     text-align: center;
     background-color: #E54028;
     margin-right: 5px;
     border-radius: 1px
 }
 .reveal .slides .content .post_mode .zk-item .raw-price-area {
+    color: #858585;
     height: 25px;
     font-size: 13px;
     line-height: 17px;
-    padding: 9px 5px 0;
+    padding: 6px 5px 0;
     overflow: hidden;
 }
 .reveal .slides .content .post_mode .zk-item .raw-price-area .sold {
@@ -1029,8 +1030,8 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     float: right
 }
 .reveal .slides .content .post_mode .zk-item .info {
-    height: 40px;
-    padding: 9px 0 0;
+    height: 36px;
+    padding: 5px 0 0;
     overflow: hidden;
 }
 .reveal .slides .content .post_mode .zk-item .info .price-area {
@@ -1073,6 +1074,9 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     background-size: 46px 19px;
     margin-top: 3px;
 }
+.reveal .slides .content .post_mode .zk-item .info .price-area .volume-price{
+    display: none;
+}
 .reveal .slides .content .post_mode .zk-item .info .price-area em.number-font {
     height: 27px;
     line-height: 30px;
@@ -1085,6 +1089,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     font-size: 20px
 }
 .reveal .slides .content .post_mode .zk-item .info .platform-area {
+    color: #ababab;
     display: block;
     float: right;
     width: 37%;
@@ -1138,7 +1143,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     font-size: 12px;
     text-align: center;
     line-height: 25px;
-    color: #fff
+    color: #eee
 }
 .reveal .slides .content .post_mode .zk-item .info .buy-area .coupon-amount {
     display: block;
@@ -1146,7 +1151,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     width: 33px;
     height: 25px;
     margin: 1px 0 1px 1px;
-    background-color: #444;
+    background-color: #424242;
     text-align: center;
     font-size: 12px;
     line-height: 25px;

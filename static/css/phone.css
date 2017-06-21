@@ -239,7 +239,7 @@ body{
 }
 .reveal{
     position:relative;
-    color:#444;
+    color:#4d4d4d;
     font-family: Verdana,"Microsoft YaHei",Tahoma,Monaco,"DejaVu Sans Mono",Arial;
     font-size: 0.65em;
     font-weight:normal;
@@ -457,7 +457,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     float: left;
     overflow-x: hidden;
     overflow-y: auto;
-    color: #444;
+    color: #4d4d4d;
     padding: 0;
 }
 .reveal .slides .tailtips-top{
@@ -554,7 +554,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 .reveal .slides .content .post_mode code{
     font-family: "Source Code Pro", Monaco, Menlo, Consolas, "DejaVu Sans Mono", monospace;
     font-size: 0.8em;
-    background-color: #444;
+    background-color: #4d4d4d;
     border-radius: 3px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -712,6 +712,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     overflow: hidden;
 }
 .reveal .slides .content .post_mode .zk-item .raw-price-area {
+    color: #666;
     height: 22px;
     font-size: 1.1em;
     line-height: 22px;
@@ -719,7 +720,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     overflow: hidden;
 }
 .reveal .slides .content .post_mode .zk-item .raw-price-area .sold {
-    font-size: 0.9em;
+    font-size: 0.95em;
     line-height: 22px;
     float: right
 }
@@ -760,13 +761,22 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     margin-right: 3px;
 }
 .reveal .slides .content .post_mode .zk-item .info .price-area i {
-    position: relative;
+    display: none;
+}
+.reveal .slides .content .post_mode .zk-item .info .price-area .volume-price{
     float: left;
-    width: 40px;
-    height: 16px;
-    background: url(../../img/quanhoujia.png) center no-repeat;
-    background-size: 40px 16px;
+    width: auto;
+    height: 15px;
+    line-height: 1.5em;
+    font-size: 0.9em;
+    color: #fff;
+    text-align: center;
+    background-color: #ff472b;
+    border-radius: 2px;
+    padding: 0 2px 0 2px;
     margin-top: 7px;
+    margin-right: 3px;
+    overflow: hidden;
 }
 .reveal .slides .content .post_mode .zk-item .info .price-area em.number-font {
     height: 27px;
