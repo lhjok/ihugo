@@ -1,12 +1,13 @@
 <script type="text/javascript">
     if (wwi < 860){
-        whe= whe*0.995;
+        whe= whe-2;
         $(document).ready(function(){
             $(".titles,.Sidebar,.tailtips-top,.tailtips-bottom,.home,.retop,.buy-area").remove();
             $(".content").css({"width": wwi += "px", "height": whe += "px"});
         });
         document.write('<script src="../../js/swiper.jquery.min.js"></' + 'script>');
         document.write("<div class=\'swiper-pagination\'><div class=\'controls-arrow\'></div></div>");
+        document.write("<div class=\'swiper-button-one\'><span class=\'controls-icon\'></span></div>");
         document.write("<div class=\'swiper-button-next\'><div class=\'controls-arrow\'></div></div>");
         document.write("<div class=\'swiper-button-prev\'><div class=\'controls-arrow\'></div></div>");
         $(document).ready(function(){
@@ -14,7 +15,6 @@
                 if (swiper.previousIndex == 0)
                     swiper.slidePrev()
             },
-            menuButton = document.getElementsByClassName('menu-button')[0],
             swiper = new Swiper('.swiper-container-h', {
                 pagination: '.swiper-pagination-h',
                 paginationClickable: true,
@@ -27,23 +27,12 @@
                 watchSlidesProgress: true,
                 watchSlidesVisibility: true,
                 lazyLoading: true,
-                spaceBetween: 8,
+                spaceBetween: 6,
                 initialSlide: 1,
-                resistanceRatio: 0.7,
-                onSlideChangeStart: function(slider) {
-                    if (slider.activeIndex == 0) {
-                        menuButton.classList.add('cross')
-                        menuButton.removeEventListener('click', toggleMenu, false)
-                    } else
-                        menuButton.classList.remove('cross')
-                },
-                onSlideChangeEnd: function(slider) {
-                    if (slider.activeIndex == 0)
-                        menuButton.removeEventListener('click', toggleMenu, false)
-                    else
-                        menuButton.addEventListener('click', toggleMenu, false)
-                },
-                slideToClickedSlide: true
+                resistanceRatio: 0.7
+            })
+            $('.swiper-button-one').click(function() {
+                swiper.slideTo(1, 1000, false);   //切换到第二个slide，速度为1秒。
             })
             var swiperV = new Swiper('.swiper-container-v', {
                 pagination: '.swiper-pagination-v',

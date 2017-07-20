@@ -578,6 +578,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     width:606px;
     height:25px;
     border-bottom: 1px solid #262626;
+    background-color: #333;
     z-index: 99;
 }
 .reveal .slides .tailtips-bottom{
@@ -592,6 +593,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     text-align: center;
     text-shadow: 0 1px 0 #666;
     border-top: 1px solid #262626;
+    background-color: #333;
     z-index: 99;
 }
 .reveal .slides .home{
@@ -1070,7 +1072,6 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     float: left;
     width: 46px;
     height: 19px;
-    background: url(../../img/quanhoujia.png) center no-repeat;
     background-size: 46px 19px;
     margin-top: 3px;
 }

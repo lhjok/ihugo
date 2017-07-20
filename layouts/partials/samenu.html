@@ -1,21 +1,22 @@
 <div class="swiper-slide menu">
+    <div class="menu-button">
+        <div class="bar">类目往右划</div>
+        <i class="fa fa-angle-double-right" style="font-size:1.7em;" aria-hidden="true"></i>
+    </div>
+    <div class="prompt"><i class="fa fa-hand-o-up" style="font-size:2.0em;" aria-hidden="true"></i></div>
     <div class="swiper-container swiper-container-v menu-content">
         <div class="swiper-wrapper menu-wrapper">
             <div class="swiper-slide menu-slide">
-                <div class="menu-logo">
-                    <a href="{{ $.Site.BaseURL }}"></a>
-                </div>
-                <div class="menu-title"><a href="{{ $.Site.BaseURL }}">{{ .Site.Params.SiteLogo }}</a></div>
-                <div class="menu-tagline">专业人工精选最优质、实惠的商品。相信专业，就在如实。</div>
+                <div class="menu-title"><a href="{{ $.Site.BaseURL }}"><i class="fa fa-themeisle" aria-hidden="true"></i>千鸟-如实尚品</a></div>
                 <ul class="nav-list">
                     <li class="nav-item">
-                        <a href="{{ $.Site.BaseURL }}"><span class="separator">//</span>新品热卖</a>
+                        <a href="{{ $.Site.BaseURL }}"><i class="fa fa-home" aria-hidden="true"></i>首页(hot)</a>
                     </li>
                     {{ if isset .Site.Taxonomies "series" }}
                         {{ if not (eq (len .Site.Taxonomies.series) 0) }}
                             {{ range $name, $items := .Site.Taxonomies.series }}
                             <li class="nav-item">
-                                <a href="{{ $.Site.BaseURL }}series/{{ $name | urlize | lower }}"><span class="separator">//</span>{{ $name }}({{ len $items }})</a>
+                                <a href="{{ $.Site.BaseURL }}series/{{ $name | urlize | lower }}"><i class="fa fa-dot-circle-o" aria-hidden="true"></i>{{ $name }}({{ len $items }})</a>
                             </li>
                             {{ end }}
                         {{ end }}
