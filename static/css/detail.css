@@ -389,7 +389,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 	display:block;
 	border: 11px transparent solid;
 	border-bottom-width:0;
-	border-top-color:#424242;
+	border-top-color:#444;
 }
 .reveal .slides .Sidebar .siteinfo .closes {
 	position: absolute;
@@ -563,7 +563,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     color: #ccc;
     overflow-x: hidden;
     overflow-y: auto;
-    padding: 25px 29px 25px 29px;
+    padding: 25px 21px 25px 21px;
     margin-left: 25px;
     border: 1px solid #222;
     border-radius: 8px;
@@ -573,7 +573,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 }
 .reveal .slides .tailtips-top{
     position: absolute;
-    right: 22px;
+    right: 16px;
     top: 1px;
     width:606px;
     height:25px;
@@ -584,7 +584,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 .reveal .slides .tailtips-bottom{
     position: absolute;
     color: #111;
-    right: 22px;
+    right: 16px;
     bottom: 1px;
     width:606px;
     height:25px;
@@ -761,6 +761,15 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     height: auto;
     overflow:hidden;
 }
+.reveal .slides .content .post_mode{
+    border-left: 1px solid #262626;
+    border-right: 1px solid #262626;
+    background: url("../../img/stripes.png") repeat;
+}
+.reveal .slides .content .post_mode .swiper-slide {
+    padding-left: 7px;
+    padding-right: 7px;
+}
 .reveal .slides .content .post_mode .titles {
     position: relative;
     width: 100%;
@@ -771,7 +780,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 .reveal .slides .content .post_mode .titles .post_title {
     position: relative;
     float: left;
-    color: #858585;
+    color: #999999;
     width: 590px;
     height: 30px;
     line-height: 28px;
@@ -792,7 +801,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 }
 .reveal .slides .content .post_mode .titles .time-share .time {
     position: relative;
-    color: #858585;
+    color: #999999;
     float: left;
     width: 103px;
     height: 18px;
