@@ -1,23 +1,18 @@
 <script type="text/javascript">
     if (wwi < 860){
-        whe= whe-2;
+        whe= whe-2; var mwhe= whe-25;
         $(document).ready(function(){
             $(".titles,.Sidebar,.tailtips-top,.tailtips-bottom,.home,.retop,.buy-area").remove();
             $(".content").css({"width": wwi += "px", "height": whe += "px"});
+            $(".menu-content").css("height", mwhe += "px");
         });
         document.write('<script src="../../js/swiper.jquery.min.js"></' + 'script>');
-        document.write("<div class=\'swiper-pagination\'><div class=\'controls-arrow\'></div></div>");
+        document.write("<div class=\'swiper-pagination\'></div>");
         document.write("<div class=\'swiper-button-one\'><span class=\'controls-icon\'></span></div>");
-        document.write("<div class=\'swiper-button-next\'><div class=\'controls-arrow\'></div></div>");
-        document.write("<div class=\'swiper-button-prev\'><div class=\'controls-arrow\'></div></div>");
+        document.write("<div class=\'swiper-button-next\'><span class=\'controls-arrow\'></span></div>");
+        document.write("<div class=\'swiper-button-prev\'><span class=\'controls-arrow\'></span></div>");
         $(document).ready(function(){
-            var toggleMenu = function(){
-                if (swiper.previousIndex == 0)
-                    swiper.slidePrev()
-            },
-            swiper = new Swiper('.swiper-container-h', {
-                pagination: '.swiper-pagination-h',
-                paginationClickable: true,
+            var swiperH = new Swiper('.swiper-container-h', {
                 nextButton: '.swiper-button-next',
                 prevButton: '.swiper-button-prev',
                 pagination: '.swiper-pagination',
@@ -30,12 +25,11 @@
                 spaceBetween: 6,
                 initialSlide: 1,
                 resistanceRatio: 0.7
-            })
+            });
             $('.swiper-button-one').click(function() {
-                swiper.slideTo(1, 1000, false);   //切换到第二个slide，速度为1秒。
-            })
+                swiperH.slideTo(1, 1000, false);   //切换到第二个slide，速度为1秒。
+            });
             var swiperV = new Swiper('.swiper-container-v', {
-                pagination: '.swiper-pagination-v',
                 direction: 'vertical',
                 slidesPerView: 'auto',
                 mousewheelControl: false,

@@ -10,6 +10,7 @@ LanguageCode = "zh-CN"
 watch = true
 HasCJKLanguage = true
 baseURL = "www.iinrs.com"
+disableLiveReload = true
 
 [taxonomies]
   series = "series"
