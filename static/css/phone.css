@@ -139,7 +139,7 @@ body{
     color: #fff;
 }
 .menu-content .menu-wrapper .menu-slide .menu-title .fa-themeisle {
-    color: #fff;
+    color: yellow;
     margin-left: 10px;
     margin-right: 4px;
 }
@@ -179,8 +179,40 @@ body{
 .menu-content .menu-wrapper .menu-slide ul.nav-list li.nav-item a:active{
     background-color:#6ff5ff;
 }
+.menu-content .menu-wrapper .menu-slide ul.nav-list li.nav-item a .cltxt {
+    position: relative;
+    display: block;
+    float: left;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    margin-right: 2px;
+}
+.menu-content .menu-wrapper .menu-slide ul.nav-list li.nav-item a .num {
+    position: relative;
+    display: block;
+    float: left;
+    font-size: 0.5em;
+    font-style: normal;
+    color: #4bebfa;
+    text-align: center;
+    width: 13px;
+    height: 13px;
+    line-height: 1.4em;
+    background-color: #99f7fe;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    overflow: hidden;
+    margin-top: 9px;
+}
 .menu-content .menu-wrapper .menu-slide ul.nav-list li.nav-item i.fa-dot-circle-o,
 .menu-content .menu-wrapper .menu-slide ul.nav-list li.nav-item i.fa-home{
+    position: relative;
+    color: Yellow;
+    display: block;
+    float: left;
+    margin-top: 8px;
     margin-right: 3px;
 }
 .reveal{

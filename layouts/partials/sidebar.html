@@ -10,7 +10,7 @@
             {{ range $name, $items := .Site.Taxonomies.series }}
             <li class="nav-item">
                 <span class="separator">//</span>
-                <a href="{{ $.Site.BaseURL }}series/{{ $name | urlize | lower }}">{{ $name }}({{ len $items }})</a>
+                <a href="{{ $.Site.BaseURL }}series/{{ $name | urlize | lower }}"><span class="cltxt">{{ $name }}</span><i class="num">{{ len $items }}</i></a>
             </li>
             {{ end }}
         {{ end }}
@@ -19,7 +19,7 @@
     <div class="foo">
         <div class="copy">CopyRight © 2017 <a href="http://www.miitbeian.gov.cn/" rel="nofollow" target="_blank">赣ICP备17006365号</a></div>
         <div class="cnzz">
-            <a href="http://www.cnzz.com/stat/website.php?web_id=1257008746" target="_blank"></a>
+            <a href="http://www.cnzz.com/stat/website.php?web_id=1263334763" target="_blank"></a>
         </div>
     </div>
     <div class="share">
@@ -27,8 +27,8 @@
         <div class="text-share">点击分享到 :</div>
     </div>
     <div class="qrcode">
-        <div class="qrcode01"><img src="../../img/code.jpg"><div class="qrcodewx">关注我们微信公众号</div></div>
-        <div class="qrcode02"><img src="../../img/code.jpg"><div class="qrcodewx">不会购买请加微信群</div></div>
+        <div class="qrcode01"><img src="../../img/gzh.png"><div class="qrcodewx">关注我们微信公众号</div></div>
+        <div class="qrcode02"><img src="../../img/wxq.png"><div class="qrcodewx">不会购买请加微信号</div></div>
     </div>
     <div class="siteinfo">
         <div class="flaginfo">
