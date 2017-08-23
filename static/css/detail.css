@@ -187,9 +187,8 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     font-family: "Microsoft YaHei",Tahoma,Monaco,"DejaVu Sans Mono",Arial;
     font-weight: bold;
     line-height: 50px;
-    text-align:right;
-    margin-top: 22px;
-    margin-bottom: 20px;
+    text-align: right;
+    margin: 22px 0px 20px 0px;
     font-size: 40px;
 }
 .reveal .slides .Sidebar .brand-tagline{
@@ -489,7 +488,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     position:relative;
     width:285px;
     height:79px;
-    margin-top:50px;
+    margin-top:40px;
 }
 .reveal .slides .logo a{
     position:relative;
