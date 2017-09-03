@@ -307,7 +307,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     width: 100%;
     height: 2px;
     left: 0;
-    bottom: 60px;
+    bottom: 53px;
     background: rgba(0,0,0,0.06);
     z-index: 10;
 }
@@ -318,7 +318,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     position: absolute;
     bottom: 0; left: 0;
     width: 100%;
-    height: 60px;
+    height: 53px;
     background: #fafafa;
     border-top-left-radius: 8px;
     -webkit-top-left-radius: 8px;
@@ -345,9 +345,9 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 .swiper-bar .swiper-button-cla .controls-cla,
 .swiper-bar .swiper-button-one .controls-icon{
     position: relative;
-    height:28px;
-    width:28px;
-    margin-top: 7px;
+    height:26px;
+    width:26px;
+    margin-top: 6px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2px;
@@ -368,7 +368,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     -moz-border-radius:2px;
     display:block;
     position:absolute;
-    top:8px; left:6px;
+    top:7px; left:5px;
     box-shadow:0 5px #888, 0 10px #888;
     -webkit-box-shadow:0 5px #888, 0 10px #888;
     -moz-box-shadow:0 5px #888, 0 10px #888;
@@ -382,7 +382,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     border-left-width:0;
     border-right-color:#888;
     position:absolute;
-    top:7px; left:12px;
+    top:6px; left:11px;
 }
 .swiper-bar .swiper-button-one .controls-icon:after{
     content:'';
@@ -391,7 +391,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     display:block;
     background-color:#888;
     position:absolute;
-    top:7px; left:9px;
+    top:6px; left:8px;
 }
 .swiper-bar .swiper-button-next{
     position: relative;
@@ -414,9 +414,9 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 .swiper-bar .swiper-button-next .controls-arrow,
 .swiper-bar .swiper-button-prev .controls-arrow{
     position: relative;
-    height:28px;
-    width:28px;
-    margin-top: 7px;
+    height:26px;
+    width:26px;
+    margin-top: 6px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2px;
@@ -436,7 +436,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     border-right-width:0;
     border-left-color:#888;
     position:absolute;
-    top:6px; left:12px;
+    top:5px; left:11px;
 }
 .swiper-bar .swiper-button-prev .controls-arrow:before{
     content:'';
@@ -447,7 +447,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     border-left-width:0;
     border-right-color:#888;
     position:absolute;
-    top:6px; left:8px;
+    top:5px; left:7px;
 }
 .swiper-bar .swiper-button-next.swiper-button-disabled,
 .swiper-bar .swiper-button-prev.swiper-button-disabled{
@@ -459,8 +459,8 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     position: relative;
     float: left;
     width:48px;
-    height:19px;
-    line-height: 19px;
+    height:15px;
+    line-height: 15px;
     font-size: 0.6em;
     color: #444;
     text-align: center;
@@ -655,13 +655,13 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 }
 .reveal .slides .content .post_mode .zk-item .img-area .lq .lq-t {
     opacity: 0.9;
-    height: 35px;
+    height: auto;
     font-weight: normal;
     background-color: #ff472b;
-    border-radius: 0 0 0 6px;
-    -webkit-border-radius: 0 0 0 6px;
-    -moz-border-radius: 0 0 0 6px;
-    padding: 2px 5px 2px 5px;
+    border-radius: 0 0 0 2px;
+    -webkit-border-radius: 0 0 0 2px;
+    -moz-border-radius: 0 0 0 2px;
+    padding: 3px 4px 3px 4px;
     overflow: hidden;
 }
 .reveal .slides .content .post_mode .zk-item .img-area .lq .lq-t .lq-t-d1 {
@@ -729,26 +729,26 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 }
 .reveal .slides .content .post_mode .zk-item .raw-price-area {
     color: #666;
-    height: 22px;
-    font-size: 1.1em;
-    line-height: 22px;
-    padding: 3px 5px 0;
+    height: 18px;
+    font-size: 1em;
+    line-height: 20px;
+    padding: 2px 5px 0;
     overflow: hidden;
 }
 .reveal .slides .content .post_mode .zk-item .raw-price-area .sold {
-    font-size: 0.95em;
-    line-height: 22px;
+    font-size: 1em;
+    line-height: 20px;
     float: right
 }
 .reveal .slides .content .post_mode .zk-item .info {
     height: auto;
-    padding: 0;
+    padding-bottom: 3px;
     overflow: hidden;
 }
 .reveal .slides .content .post_mode .zk-item .info .price-area {
     float: left;
     width: 64%;
-    height: 25px;
+    height: 22px;
     color: #FF2B22;
     padding-left: 5px;
     overflow: hidden;
@@ -782,22 +782,22 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
 .reveal .slides .content .post_mode .zk-item .info .price-area .volume-price{
     float: left;
     width: auto;
-    height: 15px;
+    height: 14px;
     line-height: 1.5em;
-    font-size: 0.9em;
+    font-size: 0.8em;
     color: #fff;
     text-align: center;
     background-color: #ff472b;
     border-radius: 2px;
     padding: 0 2px 0 2px;
-    margin-top: 7px;
+    margin-top: 8px;
     margin-right: 3px;
     overflow: hidden;
 }
 .reveal .slides .content .post_mode .zk-item .info .price-area em.number-font {
     height: 27px;
     line-height: 30px;
-    font-size: 1.9em;
+    font-size: 1.7em;
     padding-left: 2px
 }
 .reveal .slides .content .post_mode .zk-item .info .price-area em.decimal {
@@ -809,17 +809,17 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     display: block;
     float: left;
     width: 32%;
-    height: 25px;
+    height: 22px;
     font-size: 1.0em;
-    line-height: 20px;
+    line-height: 22px;
     overflow: hidden;
 }
 .reveal .slides .content .post_mode .zk-item .info .platform-area span{
     display: block;
     float: right;
-    height: 25px;
-    font-size: 1.01em;
-    line-height: 2.6;
+    height: 22px;
+    font-size: 0.9em;
+    line-height: 3em;
     margin-right: 3px;
 }
 .reveal .slides .content .post_mode .zk-item:hover .img-area .bottom-info {
@@ -832,7 +832,7 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     display: block;
     width: 16px;
     height: 16px;
-    margin-right: 5px;
+    margin-right: 2px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
