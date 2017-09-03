@@ -1,17 +1,9 @@
 <section class="swiper-slide menu">
-    <div class="menu-button">
-        <div class="bar">类目往右划</div>
-        <i class="fa fa-angle-double-right" style="font-size:1.8em;" aria-hidden="true"></i>
-    </div>
-    <div class="prompt"><i class="fa fa-hand-o-up" style="font-size:2.0em;" aria-hidden="true"></i></div>
     <div class="swiper-container swiper-container-v menu-content">
         <div class="swiper-wrapper menu-wrapper">
             <div class="swiper-slide menu-slide">
-                <div class="menu-title"><a href="{{ $.Site.BaseURL }}"><i class="fa fa-themeisle" aria-hidden="true"></i>千鸟-如实尚品</a></div>
+                <div class="menu-title"><a href="{{ $.Site.BaseURL }}"><i class="fa fa-home" aria-hidden="true"></i>千鸟-如实尚品</a></div>
                 <ul class="nav-list">
-                    <li class="nav-item">
-                        <a href="{{ $.Site.BaseURL }}"><i class="fa fa-home" aria-hidden="true"></i><span class="cltxt">首页</span><i class="num">N</i></a>
-                    </li>
                     {{ if isset .Site.Taxonomies "series" }}
                         {{ if not (eq (len .Site.Taxonomies.series) 0) }}
                             {{ range $name, $items := .Site.Taxonomies.series }}
@@ -28,5 +20,5 @@
             </div>
         </div>
     </div>
-    <div class="menu-footer">CopyRight © 2017 千鸟网络科技</div>
+    <div class="menu-footer"><span class="menu-text">CopyRight © 2017 千鸟网络科技</span></div>
 </section>

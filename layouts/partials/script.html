@@ -1,16 +1,12 @@
 <script type="text/javascript">
     if (wwi < 860){
-        whe= whe-2; var mwhe= whe-25;
+        whe= whe-62; var mwhe= whe-25;
         $(document).ready(function(){
             $(".titles,.Sidebar,.tailtips-top,.tailtips-bottom,.home,.retop,.buy-area").remove();
             $(".content").css({"width": wwi += "px", "height": whe += "px"});
             $(".menu-content").css("height", mwhe += "px");
         });
         document.write('<script src="../../js/swiper.jquery.min.js"></' + 'script>');
-        document.write("<div class=\'swiper-pagination\'></div>");
-        document.write("<div class=\'swiper-button-one\'><span class=\'controls-icon\'></span></div>");
-        document.write("<div class=\'swiper-button-next\'><span class=\'controls-arrow\'></span></div>");
-        document.write("<div class=\'swiper-button-prev\'><span class=\'controls-arrow\'></span></div>");
         $(document).ready(function(){
             var swiperH = new Swiper('.swiper-container-h', {
                 nextButton: '.swiper-button-next',
@@ -26,8 +22,11 @@
                 initialSlide: 1,
                 resistanceRatio: 0.7
             });
+            $('.swiper-button-cla').click(function() {
+                swiperH.slideTo(0, 1000, false);
+            });
             $('.swiper-button-one').click(function() {
-                swiperH.slideTo(1, 1000, false);   //切换到第二个slide，速度为1秒。
+                swiperH.slideTo(1, 1000, false);
             });
             var swiperV = new Swiper('.swiper-container-v', {
                 direction: 'vertical',
@@ -50,7 +49,7 @@
         wwi= 1129, whe= 800;
     }
     if (wwi > 860){
-        $(".menu,.menu-button").remove();
+        $(".menu,.swiper-pagination,.swiper-bar").remove();
         var widths= wwi, heights= whe, conwid= widths-285-25, taiwid= conwid-32;
         var SLConfig = {
             "deck":{

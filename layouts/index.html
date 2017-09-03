@@ -30,6 +30,13 @@
                 {{ partial "post.html" . }}
             </div>
         </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-bar">
+            <div class="swiper-button-cla"><div class="swiper-icons"><span class="controls-cla"></span><span class="swiper-text">分类</span></div></div>
+            <div class="swiper-button-one"><div class="swiper-icons"><span class="controls-icon"></span><span class="swiper-text">回首页</span></div></div>
+            <div class="swiper-button-prev"><div class="swiper-icons"><span class="controls-arrow"></span><span class="swiper-text">上一页</span></div></div>
+            <div class="swiper-button-next"><div class="swiper-icons"><span class="controls-arrow"></span><span class="swiper-text">下一页</span></div></div>
+        </div>
         {{ partial "script.html" . }}
         <script type="text/javascript">
             $(document).ready(function(){
