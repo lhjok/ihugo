@@ -654,7 +654,6 @@ html,body,.reveal div,.reveal span,.reveal applet,.reveal object,
     z-index: 1;
 }
 .reveal .slides .content .post_mode .zk-item .img-area .lq .lq-t {
-    opacity: 0.9;
     height: auto;
     font-weight: normal;
     background-color: #ff472b;
